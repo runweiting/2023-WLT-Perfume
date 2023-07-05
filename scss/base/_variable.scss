@@ -1,0 +1,128 @@
+/* -- 共同架構 -- */
+*,*:before,*:after {
+    box-sizing: border-box;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang TC", "SF Pro Text", "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.5;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+a {
+    display: block;
+    text-decoration: none;
+    &:hover {
+        opacity: 0.7;
+    }
+}
+.container {
+
+}
+.wrap {
+
+}
+
+/* -- 顏色 -- */
+$brown-dark: #916000;
+$brown-light: #AC8A46;
+$grey-dark: #8D8D8D;
+$grey-light: #E0E0E0;
+$black: #000000;
+$white: #FFFFFF;
+
+/* -- 文字顏色 -- */
+.brown-dark {
+    color: $brown-dark;
+}
+.brown-light {
+    color: $brown-light;
+}
+.grey-drak {
+    color: $grey-dark;
+}
+.grey-light {
+    color: $grey-light;
+}
+.black {
+    color: $black;
+}
+.white {
+    color: $white;
+}
+
+/* -- 文字大小 -- */
+.SF-14m {
+    font-family: SF Pro Text;
+    font-size: 14px;
+    font-weight: 500;
+}
+.SF-16l {
+    font-family: SF Pro Text;
+    font-size: 16px;
+    font-weight: 300;
+}
+.SF-16m {
+    font-family: SF Pro Text;
+    font-size: 16px;
+    font-weight: 500;
+}
+.SF-20l {
+    font-family: SF Pro Text;
+    font-size: 20px;
+    font-weight: 300;
+}
+.SF-20 {
+    font-family: SF Pro Text;
+    font-size: 20px;
+    font-weight: 400;
+}
+.SF-20m {
+    font-family: SF Pro Text;
+    font-size: 20px;
+    font-weight: 500;
+}
+.SF-24 {
+    font-family: SF Pro Text;
+    font-size: 24px;
+    font-weight: 400;
+}
+.SF-24sb {
+    font-family: SF Pro Text;
+    font-size: 24px;
+    font-weight: 600;
+}
+.SF-28m {
+    font-family: SF Pro Text;
+    font-size: 28px;
+    font-weight: 500;
+}
+.SF-32b {
+    font-family: SF Pro Text;
+    font-size: 32px;
+    font-weight: 700;
+}
+.SF-40b {
+    font-family: SF Pro Text;
+    font-size: 40px;
+    font-weight: 700;
+}
+.PF-16sb {
+    font-family: PingFang TC;
+    font-size: 16px;
+    font-weight: 600;
+}
+.PF-20l {
+    font-family: PingFang TC;
+    font-size: 20px;
+    font-weight: 300;
+}
+.PF-32sb {
+    font-family: PingFang TC;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+/* -- 間距 -- */
