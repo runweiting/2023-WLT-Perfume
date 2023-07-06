@@ -72,6 +72,7 @@ img {
 }
 
 a {
+  display: block;
   text-decoration: none;
 }
 a:hover {
@@ -94,6 +95,7 @@ button {
 
 .material-icons {
   vertical-align: middle;
+  font-size: 20px;
 }
 
 /* -- 顏色 -- */
@@ -220,4 +222,43 @@ button {
 /* -- 間距 -- */
 .mr-3 {
   margin-right: 3px;
+}
+
+.header {
+  padding: 9px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header img {
+  width: 128px;
+}
+
+.desk-nav {
+  display: flex;
+  gap: 32px;
+}
+
+.banner {
+  height: calc(100vh - 56px);
+  background: url(https://images.unsplash.com/photo-1588159343745-445ae0b16383?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2064&q=80) center center;
+  background-size: cover;
+}
+.banner .wrap {
+  height: calc(100vh - 56px);
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.banner .wrap .slogan {
+  width: 445px;
+}
+.banner .wrap .slogan .btn-shopnow {
+  padding: 13px 109px;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  background-color: transparent;
+}
+.banner .wrap .slogan .btn-shopnow:hover {
+  background-color: rgba(255, 255, 255, 0.3137254902);
 }
