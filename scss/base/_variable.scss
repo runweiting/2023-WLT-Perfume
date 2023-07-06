@@ -1,3 +1,7 @@
+* {
+    outline: 1px solid yellowgreen;
+}
+
 /* -- 共同架構 -- */
 *,*:before,*:after {
     box-sizing: border-box;
@@ -7,22 +11,28 @@ body {
     line-height: 1.5;
 }
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+    vertical-align: middle;
 }
 a {
-    display: block;
     text-decoration: none;
     &:hover {
         opacity: 0.7;
     }
 }
-.container {
+button {
+    background-color: transparent;
+}
 
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
 }
 .wrap {
-
+    width: 1110px;
+    margin: 0 auto;
+}
+.material-icons {
+    vertical-align: middle;
 }
 
 /* -- 顏色 -- */
@@ -33,6 +43,14 @@ $grey-light: #E0E0E0;
 $black: #000000;
 $white: #FFFFFF;
 
+/* -- 背景顏色 -- */
+.bgc-gl {
+    background-color: $grey-light;
+}
+.bgc-bd {
+    background-color: $brown-dark;
+}
+
 /* -- 文字顏色 -- */
 .brown-dark {
     color: $brown-dark;
@@ -40,7 +58,7 @@ $white: #FFFFFF;
 .brown-light {
     color: $brown-light;
 }
-.grey-drak {
+.grey-dark {
     color: $grey-dark;
 }
 .grey-light {
@@ -125,4 +143,10 @@ $white: #FFFFFF;
     font-weight: 600;
 }
 
+/* -- 排版 -- */
+
+
 /* -- 間距 -- */
+.mr-3 {
+    margin-right: 3px;
+}

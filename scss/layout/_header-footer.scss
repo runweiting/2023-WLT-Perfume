@@ -1,0 +1,20 @@
+.header {
+    padding: 9px 0;
+    display: flex;
+    justify-content: space-between;
+    img {
+        width: 128px;
+    }
+}
+.desk-nav {
+    display: flex;
+    gap: 32px;
+    li {
+        text-align: center;
+        font-size: 20px;
+        a {
+            padding: 16px;
+            display: block;
+        }
+    }
+}
