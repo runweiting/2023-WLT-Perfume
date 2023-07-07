@@ -177,12 +177,21 @@ table {
   font-weight: 600;
 }
 
+/* -- 字體樣式 -- */
+.td-lt {
+  text-decoration: line-through;
+}
+
 /* -- 排版 -- */
 .ta-left {
   text-align: left;
 }
 
-.flex-rr {
+.d-flex {
+  display: flex;
+}
+
+.flexD-rr {
   flex-direction: row-reverse;
 }
 
@@ -191,8 +200,24 @@ table {
   margin-right: 3px;
 }
 
+.mb-4 {
+  margin-bottom: 4px;
+}
+
+.mb-8 {
+  margin-bottom: 8px;
+}
+
 .mb-16 {
   margin-bottom: 16px;
+}
+
+.mb-52 {
+  margin-bottom: 52px;
+}
+
+.gap-8 {
+  gap: 8px;
 }
 
 /* -- 共同架構 -- */
@@ -213,10 +238,6 @@ img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  transition: all 0.5s ease-in-out;
-}
-img:hover {
-  transform: scale(1.2);
 }
 
 a {
@@ -224,7 +245,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  opacity: 0.7;
+  opacity: 0.5;
 }
 
 button {
@@ -272,44 +293,116 @@ button {
   flex-direction: row-reverse;
   align-items: center;
 }
-.banner .wrap .slogan {
+
+.slogan {
   width: 445px;
 }
-.banner .wrap .slogan .btn-shopnow {
+.slogan .btn-shopnow {
   padding: 13px 109px;
-  border: 2px solid #fff;
+  border: 2px solid #FFFFFF;
   border-radius: 30px;
-  background-color: transparent;
 }
-.banner .wrap .slogan .btn-shopnow:hover {
-  background-color: rgba(255, 255, 255, 0.3137254902);
+.slogan .btn-shopnow:hover {
+  background-color: #916000;
+  border: 1px solid #916000;
 }
 
 .main {
   padding: 60px 0;
+  display: grid;
+  grid-template-columns: 1110px;
+  grid-template-rows: 555px 555px 555px 1080px;
 }
 .main .card {
   display: flex;
-  height: 555px;
 }
-.main .card .text {
+
+.text {
   width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.main .card .text .textBox {
+
+.textBox {
   text-align: left;
   width: 64%;
 }
-.main .card .photo {
+.textBox .btn-freeTrain {
+  padding: 18px 52px;
+  border: 2px solid #000000;
+  border-radius: 30px;
+}
+.textBox .btn-freeTrain:hover {
+  background-color: #916000;
+  color: #fff;
+  border: 1px solid #916000;
+}
+
+.photo {
   width: 50%;
   overflow: hidden;
 }
-.main .card .photo .photoBox {
+
+.photoBox {
   width: 100%;
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
+  transition: all 0.5s ease-in-out;
+}
+.photoBox:hover {
+  transform: scale(1.2);
+}
+
+.bestselling {
+  padding: 40px 0;
+  display: flex;
+  gap: 30px;
+}
+.bestselling .item {
+  width: 33.33%;
+  overflow: hidden;
+}
+.bestselling .item a {
+  color: #000000;
+}
+.bestselling .item img {
+  height: 540px;
+}
+.bestselling .soldout {
+  position: relative;
+}
+.bestselling .soldout p {
+  position: absolute;
+  width: 160px;
+  text-align: center;
+  top: 252px;
+  left: 95px;
+  z-index: 2;
+}
+.bestselling .soldout::before {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 540px;
+  background-color: #000000;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.news {
+  padding: 60px 0;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 520px;
+  grid-column-gap: 30px;
+}
+.news .textBox {
+  padding: 82px 0;
+  width: 100%;
+}
+.news .textBox a {
+  color: #000000;
 }
