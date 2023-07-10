@@ -1,23 +1,23 @@
 .banner {
-    height: calc(100vh - 56px);
-    background: url(https://images.unsplash.com/photo-1588159343745-445ae0b16383?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2064&q=80) center center;
+    height: 870px;
     background-size: cover;
+    background-repeat: no-repeat;
     .wrap {
-        height: calc(100vh - 56px);
+        height: 870px;
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
-    }
-}
-.slogan {
-    width: 445px;
-    .btn-shopnow {
-        padding: 13px 109px;
-        border: 2px solid $white;
-        border-radius: 30px;
-        &:hover {
-            background-color: $brown-dark;
-            border: 1px solid $brown-dark;
+        .slogan {
+            width: 445px;
+            .btn-shopnow {
+                padding: 9px 109px;
+                border: 2px solid $white;
+                border-radius: 30px;
+                &:hover {
+                    background-color: $brown-dark;
+                    border: 2px solid $brown-dark;
+                }
+            }
         }
     }
 }
@@ -42,13 +42,13 @@
     text-align: left;
     width: 64%;
     .btn-freeTrain {
-        padding: 18px 52px;
+        padding: 15px 52px;
         border: 2px solid $black;
         border-radius: 30px;
         &:hover {
             background-color: $brown-dark;
             color: #fff;
-            border: 1px solid $brown-dark;
+            border: 2px solid $brown-dark;
         }
     }
 }

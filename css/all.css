@@ -230,8 +230,8 @@ img {
   display: block;
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 a {
@@ -272,28 +272,27 @@ button {
 }
 
 .banner {
-  height: calc(100vh - 56px);
-  background: url(https://images.unsplash.com/photo-1588159343745-445ae0b16383?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2064&q=80) center center;
+  height: 870px;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .banner .wrap {
-  height: calc(100vh - 56px);
+  height: 870px;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
 }
-
-.slogan {
+.banner .wrap .slogan {
   width: 445px;
 }
-.slogan .btn-shopnow {
-  padding: 13px 109px;
+.banner .wrap .slogan .btn-shopnow {
+  padding: 9px 109px;
   border: 2px solid #FFFFFF;
   border-radius: 30px;
 }
-.slogan .btn-shopnow:hover {
+.banner .wrap .slogan .btn-shopnow:hover {
   background-color: #916000;
-  border: 1px solid #916000;
+  border: 2px solid #916000;
 }
 
 .main {
@@ -319,14 +318,14 @@ button {
   width: 64%;
 }
 .textBox .btn-freeTrain {
-  padding: 18px 52px;
+  padding: 15px 52px;
   border: 2px solid #000000;
   border-radius: 30px;
 }
 .textBox .btn-freeTrain:hover {
   background-color: #916000;
   color: #fff;
-  border: 1px solid #916000;
+  border: 2px solid #916000;
 }
 
 .photo {
