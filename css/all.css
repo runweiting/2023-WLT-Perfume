@@ -173,10 +173,6 @@ table {
 }
 
 /* -- 排版 -- */
-.ta-left {
-  text-align: left;
-}
-
 .d-flex {
   display: flex;
 }
@@ -365,17 +361,16 @@ button {
   justify-content: center;
   align-items: center;
 }
-
-.textBox {
+.text .textBox {
   text-align: left;
   width: 64%;
 }
-.textBox .btn-freeTrain {
+.text .textBox .btn-freeTrain {
   padding: 15px 52px;
   border: 2px solid #000000;
   border-radius: 30px;
 }
-.textBox .btn-freeTrain:hover {
+.text .textBox .btn-freeTrain:hover {
   background-color: #916000;
   color: #fff;
   border: 2px solid #916000;
@@ -385,15 +380,14 @@ button {
   width: 50%;
   overflow: hidden;
 }
-
-.photoBox {
+.photo .photoBox {
   width: 100%;
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   transition: all 0.5s ease-in-out;
 }
-.photoBox:hover {
+.photo .photoBox:hover {
   transform: scale(1.2);
 }
 
