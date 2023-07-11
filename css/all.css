@@ -53,22 +53,13 @@ table {
   border-spacing: 0;
 }
 
-* {
-  outline: 1px solid yellowgreen;
-}
-
+/* {
+    outline: 1px solid yellowgreen;
+}*/
 /* -- 顏色 -- */
 /* -- 背景顏色 -- */
 .bgc-gl {
   background-color: #E0E0E0;
-}
-
-.bgc-bd {
-  background-color: #916000;
-}
-
-.bgc-w {
-  background-color: #FFFFFF;
 }
 
 /* -- 文字顏色 -- */
@@ -279,8 +270,63 @@ button {
   gap: 32px;
 }
 
+.footer-top {
+  height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.footer-top .wrap {
+  height: 600px;
+  padding: 312px 0 112px;
+}
+.footer-top .wrap .subscribe {
+  margin-right: auto;
+}
+
+.input {
+  display: flex;
+}
+.input-email {
+  padding: 18px 56px 18px 18px;
+  background-color: #FFFFFF;
+  border: 2px solid #916000;
+  border-radius: 4px 0 0 4px;
+}
+.input .btn-subscribe {
+  padding: 18px 26px;
+  background-color: #916000;
+  border: 2px solid #916000;
+  border-radius: 0 4px 4px 0;
+  font-size: 16px;
+}
+
+.footer-bottom {
+  background-color: #916000;
+}
+.footer-bottom .wrap {
+  padding: 21px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-bottom .wrap .copyright {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.footer-bottom .wrap .copyright img {
+  width: 128px;
+}
+.footer-bottom .wrap .subnav {
+  display: flex;
+}
+.footer-bottom .wrap .subnav a {
+  padding: 0 18px;
+}
+
 .banner {
   height: 870px;
+  background-image: url("https://images.unsplash.com/photo-1588159343745-445ae0b16383?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2064&q=80');background-position:center center;");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -397,34 +443,4 @@ button {
 .news .textBox {
   padding: 82px 0;
   width: 100%;
-}
-
-.footer-top {
-  height: 600px;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.footer-top .wrap {
-  height: 600px;
-  padding: 312px 0 112px;
-}
-.footer-top .wrap .subscribe {
-  margin-right: auto;
-}
-
-.input {
-  display: flex;
-}
-.input-email {
-  padding: 18px 56px 18px 18px;
-  background-color: #FFFFFF;
-  border: 2px solid #916000;
-  border-radius: 4px 0 0 4px;
-}
-.input .btn-subscribe {
-  padding: 18px 26px;
-  background-color: #916000;
-  border: 2px solid #916000;
-  border-radius: 0 4px 4px 0;
-  font-size: 16px;
 }

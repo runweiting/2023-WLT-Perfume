@@ -11,3 +11,56 @@
     display: flex;
     gap: 32px;
 }
+
+.footer-top {
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .wrap {
+        height: 600px;
+        padding: 312px 0 112px;
+        .subscribe {
+            margin-right: auto;
+        }
+    }
+}
+.input {
+    display: flex;
+    &-email {
+        padding: 18px 56px 18px 18px;
+        background-color: $white;
+        border: 2px solid $brown-dark;
+        border-radius: 4px 0 0 4px;
+    }
+    .btn-subscribe {
+        padding: 18px 26px;
+        background-color: $brown-dark;
+        border: 2px solid $brown-dark;
+        border-radius: 0 4px 4px 0;
+        font-size: 16px;
+    }
+}
+.footer-bottom {
+    background-color: $brown-dark;
+    .wrap {
+        padding: 21px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .copyright {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            img {
+                width: 128px;
+            }
+        }
+        .subnav {
+            display: flex;
+            a {
+                padding: 0 18px;
+            }
+        }
+    }
+
+}
