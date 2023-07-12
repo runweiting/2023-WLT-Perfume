@@ -53,9 +53,10 @@ table {
   border-spacing: 0;
 }
 
-/* {
-    outline: 1px solid yellowgreen;
-}*/
+* {
+  outline: 1px solid yellowgreen;
+}
+
 /* -- 顏色 -- */
 /* -- 背景顏色 -- */
 .bgc-gl {
@@ -251,6 +252,7 @@ button {
   font-size: 20px;
 }
 
+/* -- header -- */
 .header {
   padding: 9px 0;
   display: flex;
@@ -266,10 +268,19 @@ button {
   gap: 32px;
 }
 
+/* -- 768 mobile-nav -- */
+.mobile-nav {
+  display: none;
+}
+
+/* -- footer -- */
 .footer-top {
+  max-width: 100%;
   height: 600px;
+  background-image: url("https://images.unsplash.com/photo-1532413992378-f169ac26fff0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1160&q=80");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: 0 50%;
 }
 .footer-top .wrap {
   height: 600px;
@@ -320,11 +331,56 @@ button {
   padding: 0 18px;
 }
 
+/* -- 1110 -- */
+@media (max-width: 1109.98px) {
+  .header {
+    padding: 9px;
+  }
+  .subscribe {
+    padding: 21px;
+  }
+  .footer-bottom .wrap {
+    padding: 21px;
+  }
+}
+/* -- 768 -- */
+@media (max-width: 767.98px) {
+  .desk-nav {
+    display: none;
+  }
+  .mobile-nav {
+    display: flex;
+    gap: 28px;
+  }
+  .mobile-nav .shopping-cart {
+    width: 30px;
+    position: relative;
+  }
+  .mobile-nav .shopping-cart .quantity {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    padding: 0 5px;
+    background-color: #916000;
+    border-radius: 7px;
+    color: #FFFFFF;
+    font-size: 12px;
+    text-align: center;
+    z-index: 1;
+  }
+  .subscribe {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 .banner {
+  max-width: 100%;
   height: 870px;
-  background-image: url("https://images.unsplash.com/photo-1588159343745-445ae0b16383?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2064&q=80');background-position:center center;");
+  background-image: url("https://images.unsplash.com/photo-1588159343745-445ae0b16383?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2064&q=80");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
 }
 .banner .wrap {
   height: 870px;
@@ -332,7 +388,7 @@ button {
 }
 .banner .wrap .slogan {
   margin-left: auto;
-  width: 445px;
+  max-width: 445px;
 }
 .banner .wrap .slogan .btn-shopnow {
   padding: 9px 109px;
@@ -429,12 +485,19 @@ button {
 
 .news {
   padding: 60px 0;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 520px;
-  grid-column-gap: 30px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
-.news .textBox {
-  padding: 82px 0;
-  width: 100%;
+.news .news-photo {
+  width: 66.66%;
 }
+.news .news-photo img {
+  height: 520px;
+}
+.news .news-text {
+  width: 33.33%;
+}
+
+/* -- 1110 -- */
+/* -- 768 -- */
