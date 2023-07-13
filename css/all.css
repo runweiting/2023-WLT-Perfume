@@ -462,24 +462,33 @@ button {
 .bestselling .item img {
   height: 540px;
 }
-.bestselling .soldout {
+.bestselling .mask {
   position: relative;
+  width: 350px;
+  height: 540px;
+  margin-bottom: 8px;
 }
-.bestselling .soldout p {
+.bestselling .mask::before {
+  content: "Sold out";
   position: absolute;
-  width: 160px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #FFFFFF;
   text-align: center;
-  top: 252px;
-  left: 95px;
-  z-index: 2;
+  top: 50%;
+  right: 0;
+  left: 0;
+  z-index: 3;
 }
-.bestselling .soldout::before {
+.bestselling .mask::after {
   content: "";
   position: absolute;
   width: 350px;
   height: 540px;
   background-color: #000000;
   opacity: 0.3;
+  top: 0;
+  left: 0;
   z-index: 1;
 }
 
@@ -500,4 +509,12 @@ button {
 }
 
 /* -- 1110 -- */
+@media (max-width: 1109.98px) {
+  .main {
+    grid-template-columns: 100%;
+  }
+  .textBox p {
+    margin-bottom: 30px;
+  }
+}
 /* -- 768 -- */
