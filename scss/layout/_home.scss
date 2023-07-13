@@ -83,7 +83,7 @@
     }
     .mask {
         position: relative;
-        width: 350px;
+        width: 100%;
         height: 540px;
         margin-bottom: 8px;
         &::before {
@@ -101,8 +101,8 @@
         &::after {
             content: "";
             position: absolute;
-            width: 350px;
-            height: 540px;
+            width: 100%;
+            height: 100%;
             background-color: $black;
             opacity: 0.3;
             top: 0;
@@ -140,5 +140,102 @@
 
 /* -- 768 -- */
 @media (max-width: 767.98px) {
-    
+    .banner {
+        height: 480px;
+        .wrap {
+            padding: 118px 15px;
+            .slogan {
+                margin: 0 auto;
+                h2 {
+                    font-size: 32px;
+                }
+                p {
+                    font-size: 20px;
+                }
+                .btn-shopnow {
+                    width: 100%;
+                    padding: 9px;
+                }
+            }
+        }
+    }
+    .main {
+        padding: 40px 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        .card {
+            flex-wrap: wrap;
+            .text {
+                width: 100%;
+                order: 2;
+                .textBox {
+                    width: 90%;
+                    p {
+                        margin-bottom: 8px;
+                    }
+                    .btn-freeTrain {
+                        width: 100%;
+                        padding: 15px;
+                    }
+                }
+            }
+            .photo {
+                width: 100%;
+                height: 350px;
+                order: 1;
+                margin-bottom: 8px;
+            }
+            .h-680 {
+                height: 680px;
+            }
+        }
+        
+    }
+    .bestselling {
+        padding: 30px 15px;
+        flex-direction: column;
+        gap: 32px;
+        .item {
+            width: 100%;
+            overflow: hidden;
+            img {
+                width: 100%;
+                height: 540px;
+                margin-top: -30%;
+            }
+            .mask::before {
+                top: 68%;
+            }
+        }
+    }
+    .news {
+        padding: 40px 15px;
+        flex-direction: column;
+        gap: 8px;
+        .news-photo {
+            width: 100%;
+            img {
+                height: 520px;
+            }
+        }
+        .news-text {
+            width: 100%;
+            p {
+                margin-bottom: 8px;
+            }
+        }
+    }
+    .input {
+        &-email {
+            width: 66.66%;
+        }
+        .btn-subscribe {
+            width: 33.33%;
+        }
+    }
+    .subnavBox {
+        display: none;
+    }
+
 }

@@ -90,7 +90,9 @@
 
 /* -- 768 -- */
 @media (max-width: 767.98px) {
-
+    .header {
+        padding: 9px 20px;
+    }
     .desk-nav {
         display: none;
     }

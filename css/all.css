@@ -207,6 +207,10 @@ table {
   margin-bottom: 52px;
 }
 
+.mb-60 {
+  margin-bottom: 60px;
+}
+
 .gap-8 {
   gap: 8px;
 }
@@ -345,6 +349,9 @@ button {
 }
 /* -- 768 -- */
 @media (max-width: 767.98px) {
+  .header {
+    padding: 9px 20px;
+  }
   .desk-nav {
     display: none;
   }
@@ -464,7 +471,7 @@ button {
 }
 .bestselling .mask {
   position: relative;
-  width: 350px;
+  width: 100%;
   height: 540px;
   margin-bottom: 8px;
 }
@@ -483,8 +490,8 @@ button {
 .bestselling .mask::after {
   content: "";
   position: absolute;
-  width: 350px;
-  height: 540px;
+  width: 100%;
+  height: 100%;
   background-color: #000000;
   opacity: 0.3;
   top: 0;
@@ -518,3 +525,99 @@ button {
   }
 }
 /* -- 768 -- */
+@media (max-width: 767.98px) {
+  .banner {
+    height: 480px;
+  }
+  .banner .wrap {
+    padding: 118px 15px;
+  }
+  .banner .wrap .slogan {
+    margin: 0 auto;
+  }
+  .banner .wrap .slogan h2 {
+    font-size: 32px;
+  }
+  .banner .wrap .slogan p {
+    font-size: 20px;
+  }
+  .banner .wrap .slogan .btn-shopnow {
+    width: 100%;
+    padding: 9px;
+  }
+  .main {
+    padding: 40px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .main .card {
+    flex-wrap: wrap;
+  }
+  .main .card .text {
+    width: 100%;
+    order: 2;
+  }
+  .main .card .text .textBox {
+    width: 90%;
+  }
+  .main .card .text .textBox p {
+    margin-bottom: 8px;
+  }
+  .main .card .text .textBox .btn-freeTrain {
+    width: 100%;
+    padding: 15px;
+  }
+  .main .card .photo {
+    width: 100%;
+    height: 350px;
+    order: 1;
+    margin-bottom: 8px;
+  }
+  .main .card .h-680 {
+    height: 680px;
+  }
+  .bestselling {
+    padding: 30px 15px;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .bestselling .item {
+    width: 100%;
+    overflow: hidden;
+  }
+  .bestselling .item img {
+    width: 100%;
+    height: 540px;
+    margin-top: -30%;
+  }
+  .bestselling .item .mask::before {
+    top: 68%;
+  }
+  .news {
+    padding: 40px 15px;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .news .news-photo {
+    width: 100%;
+  }
+  .news .news-photo img {
+    height: 520px;
+  }
+  .news .news-text {
+    width: 100%;
+  }
+  .news .news-text p {
+    margin-bottom: 8px;
+  }
+  .input-email {
+    width: 66.66%;
+  }
+  .input .btn-subscribe {
+    width: 33.33%;
+  }
+  .subnavBox {
+    display: none;
+  }
+}
