@@ -14,6 +14,9 @@ $white: #FFFFFF;
 .bgc-gl {
     background-color: $grey-light;
 }
+.bgc-bd {
+    background-color: $brown-dark;
+}
 
 /* -- 文字顏色 -- */
 .brown-dark {
@@ -119,6 +122,9 @@ $white: #FFFFFF;
 .mr-3 {
     margin-right: 3px;
 }
+.mr-11 {
+    margin-right: 11px;
+}
 .mb-4 {
     margin-bottom: 4px;
 }
@@ -164,7 +170,12 @@ a {
     }
 }
 button {
+    padding: 0;
+    border: none;
     background-color: transparent;
+    &:hover {
+        opacity: 0.5;
+    }
 }
 
 .wrap {
