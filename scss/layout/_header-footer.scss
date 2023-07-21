@@ -1,9 +1,6 @@
 /* -- header -- */
 .header {
     padding: 9px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     h1 {
         float: left;
         a {
@@ -18,16 +15,15 @@
     }
 }
 .desk-nav {
-    display: flex;
-    gap: 32px;
+    font-family: 'SF Pro Text';
 }
 /* -- 768 mobile-nav -- */
 .mobile-nav {
     display: none;
 }
 
-/* -- footer -- */
-.footer-top {
+/* -- subscribe -- */
+.subscribe {
     height: 600px;
     background-image: url("https://images.unsplash.com/photo-1532413992378-f169ac26fff0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1160&q=80");
     background-size: cover;
@@ -36,7 +32,7 @@
     .wrap {
         height: 600px;
         padding: 312px 0 112px;
-        .subscribe {
+        .subscribe-text {
             margin-right: auto;
         }
     }
@@ -57,7 +53,8 @@
         font-size: 16px;
     }
 }
-.footer-bottom {
+/* -- footer -- */
+.footer {
     background-color: $color-primary;
     .wrap {
         padding: 21px 0;
@@ -86,7 +83,7 @@
     .header {
         padding: 9px;
     }
-    .subscribe {
+    .subscribe-text {
        padding: 21px;
     }
     .footer-bottom {
@@ -106,6 +103,7 @@
     }
     .mobile-nav {
         display: flex;
+        align-items: center;
         gap: 28px;
         .shopping-cart {
             width: 30px;
@@ -124,7 +122,7 @@
             }
         }
     }
-    .subscribe {
+    .subscribe-text {
         width: 100%;
         margin: 0 auto;
     }

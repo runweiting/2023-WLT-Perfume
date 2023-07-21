@@ -202,12 +202,12 @@ table {
 }
 
 /* -- 字體樣式 -- */
-.td-lt {
+.text-decoration-line-through {
   text-decoration: line-through;
 }
 
 /* -- 排版 -- */
-.flex {
+.d-flex {
   display: flex;
 }
 
@@ -215,13 +215,29 @@ table {
   flex-direction: row-reverse;
 }
 
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.me-auto {
+  margin-right: 0 auto;
+}
+
 /* -- 間距 -- */
-.mr-3 {
-  margin-right: 3px;
+.mr-1 {
+  margin-right: 4px;
 }
 
 .mr-11 {
   margin-right: 11px;
+}
+
+.mr-8 {
+  margin-right: 32px;
 }
 
 .mb-1 {
@@ -305,9 +321,6 @@ button:hover {
 /* -- header -- */
 .header {
   padding: 9px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 .header h1 {
   float: left;
@@ -323,8 +336,7 @@ button:hover {
 }
 
 .desk-nav {
-  display: flex;
-  gap: 32px;
+  font-family: "SF Pro Text";
 }
 
 /* -- 768 mobile-nav -- */
@@ -332,19 +344,19 @@ button:hover {
   display: none;
 }
 
-/* -- footer -- */
-.footer-top {
+/* -- subscribe -- */
+.subscribe {
   height: 600px;
   background-image: url("https://images.unsplash.com/photo-1532413992378-f169ac26fff0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1160&q=80");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 50%;
 }
-.footer-top .wrap {
+.subscribe .wrap {
   height: 600px;
   padding: 312px 0 112px;
 }
-.footer-top .wrap .subscribe {
+.subscribe .wrap .subscribe-text {
   margin-right: auto;
 }
 
@@ -365,27 +377,28 @@ button:hover {
   font-size: 16px;
 }
 
-.footer-bottom {
+/* -- footer -- */
+.footer {
   background-color: #916019;
 }
-.footer-bottom .wrap {
+.footer .wrap {
   padding: 21px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.footer-bottom .wrap .copyright {
+.footer .wrap .copyright {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-.footer-bottom .wrap .copyright img {
+.footer .wrap .copyright img {
   height: 38px;
 }
-.footer-bottom .wrap .subnav {
+.footer .wrap .subnav {
   display: flex;
 }
-.footer-bottom .wrap .subnav a {
+.footer .wrap .subnav a {
   padding: 0 18px;
 }
 
@@ -394,7 +407,7 @@ button:hover {
   .header {
     padding: 9px;
   }
-  .subscribe {
+  .subscribe-text {
     padding: 21px;
   }
   .footer-bottom .wrap {
@@ -411,6 +424,7 @@ button:hover {
   }
   .mobile-nav {
     display: flex;
+    align-items: center;
     gap: 28px;
   }
   .mobile-nav .shopping-cart {
@@ -429,7 +443,7 @@ button:hover {
     text-align: center;
     z-index: 1;
   }
-  .subscribe {
+  .subscribe-text {
     width: 100%;
     margin: 0 auto;
   }

@@ -125,25 +125,38 @@ $color-light: #AC8A46;
 }
 
 /* -- 字體樣式 -- */
-.td-lt {
+.text-decoration-line-through {
     text-decoration: line-through;
 }
 
 /* -- 排版 -- */
-.flex {
+.d-flex {
     display: flex;
 }
 .flex-row-reverse {
     flex-direction: row-reverse;
 }
-
+.justify-content-between {
+    justify-content: space-between;
+}
+.align-items-center {
+    align-items: center;
+}
+.me-auto {
+    margin-right: 0 auto;
+}
 /* -- 間距 -- */
-.mr-3 {
-    margin-right: 3px;
+.mr-1 {
+    margin-right: 4px;
 }
 .mr-11 {
     margin-right: 11px;
 }
+.mr-8 {
+    margin-right: 32px;
+}
+
+
 .mb-1 {
     margin-bottom: 4px;
 }
