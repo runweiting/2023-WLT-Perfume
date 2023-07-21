@@ -356,9 +356,6 @@ button:hover {
   height: 600px;
   padding: 312px 0 112px;
 }
-.subscribe .wrap .subscribe-text {
-  margin-right: auto;
-}
 
 .input {
   display: flex;
@@ -410,7 +407,7 @@ button:hover {
   .subscribe-text {
     padding: 21px;
   }
-  .footer-bottom .wrap {
+  .footer .wrap {
     padding: 21px;
   }
 }

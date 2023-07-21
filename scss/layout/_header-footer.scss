@@ -32,9 +32,6 @@
     .wrap {
         height: 600px;
         padding: 312px 0 112px;
-        .subscribe-text {
-            margin-right: auto;
-        }
     }
 }
 .input {
@@ -86,10 +83,8 @@
     .subscribe-text {
        padding: 21px;
     }
-    .footer-bottom {
-        .wrap {
-            padding: 21px;
-        }
+    .footer .wrap {
+        padding: 21px;
     }
 }
 
