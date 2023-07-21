@@ -53,35 +53,23 @@ table {
   border-spacing: 0;
 }
 
-* {
-  outline: 1px solid yellowgreen;
-}
-
 /* -- 顏色 -- */
 /* -- 背景顏色 -- */
-.bgc-gl {
+.bg-light {
   background-color: #E0E0E0;
 }
 
-.bgc-bd {
-  background-color: #916000;
-}
-
 /* -- 文字顏色 -- */
-.brown-dark {
-  color: #916000;
+.color-primary {
+  color: #916019;
 }
 
-.brown-light {
-  color: #AC8A46;
-}
-
-.grey-dark {
+.color-secondary {
   color: #8D8D8D;
 }
 
-.grey-light {
-  color: #E0E0E0;
+.color-light {
+  color: #AC8A46;
 }
 
 .black {
@@ -224,6 +212,10 @@ table {
 }
 
 /* -- 共同架構 -- */
+* {
+  outline: 1px solid yellowgreen;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -321,19 +313,19 @@ button:hover {
 .input-email {
   padding: 18px 56px 18px 18px;
   background-color: #FFFFFF;
-  border: 2px solid #916000;
+  border: 2px solid #916019;
   border-radius: 4px 0 0 4px;
 }
 .input .btn-subscribe {
   padding: 18px 26px;
-  background-color: #916000;
-  border: 2px solid #916000;
+  background-color: #916019;
+  border: 2px solid #916019;
   border-radius: 0 4px 4px 0;
   font-size: 16px;
 }
 
 .footer-bottom {
-  background-color: #916000;
+  background-color: #916019;
 }
 .footer-bottom .wrap {
   padding: 21px 0;
@@ -389,7 +381,7 @@ button:hover {
     top: 0;
     right: 0;
     padding: 0 5px;
-    background-color: #916000;
+    background-color: #916019;
     border-radius: 7px;
     color: #FFFFFF;
     font-size: 12px;
@@ -422,8 +414,8 @@ button:hover {
   border-radius: 30px;
 }
 .banner .wrap .slogan .btn-shopnow:hover {
-  background-color: #916000;
-  border: 2px solid #916000;
+  background-color: #916019;
+  border: 2px solid #916019;
 }
 
 .main {
@@ -453,9 +445,9 @@ button:hover {
   border-radius: 30px;
 }
 .text .textBox .btn-freeTrain:hover {
-  background-color: #916000;
+  background-color: #916019;
   color: #fff;
-  border: 2px solid #916000;
+  border: 2px solid #916019;
 }
 
 .photo {

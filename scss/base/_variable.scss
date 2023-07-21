@@ -1,41 +1,28 @@
-* {
-    outline: 1px solid yellowgreen;
-}
-
 /* -- 顏色 -- */
-$brown-dark: #916000;
-$brown-light: #AC8A46;
-$grey-dark: #8D8D8D;
-$grey-light: #E0E0E0;
-$black: #000000;
-$white: #FFFFFF;
+$color-primary: #916019;
+$color-secondary: #8D8D8D;
+$color-light: #AC8A46;
 
 /* -- 背景顏色 -- */
-.bgc-gl {
-    background-color: $grey-light;
-}
-.bgc-bd {
-    background-color: $brown-dark;
+.bg-light {
+    background-color: #E0E0E0;
 }
 
 /* -- 文字顏色 -- */
-.brown-dark {
-    color: $brown-dark;
+.color-primary {
+    color: $color-primary;
 }
-.brown-light {
-    color: $brown-light;
+.color-secondary {
+    color: $color-secondary;
 }
-.grey-dark {
-    color: $grey-dark;
-}
-.grey-light {
-    color: $grey-light;
+.color-light {
+    color: $color-light;
 }
 .black {
-    color: $black;
+    color: #000000;
 }
 .white {
-    color: $white;
+    color: #FFFFFF;
 }
 
 /* -- 文字大小 -- */
@@ -148,13 +135,16 @@ $white: #FFFFFF;
 }
 
 /* -- 共同架構 -- */
+* {
+    outline: 1px solid yellowgreen;
+}
 *,*::before,*::after {
     box-sizing: border-box;
 }
 body {
     font-family: -apple-system, BlinkMacSystemFont, "PingFang TC", "SF Pro Text", "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
     line-height: 1.5;
-    color: $black;
+    color: #000000;
 }
 img {
     display: block;

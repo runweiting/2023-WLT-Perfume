@@ -15,8 +15,8 @@
                 border: 2px solid $white;
                 border-radius: 30px;
                 &:hover {
-                    background-color: $brown-dark;
-                    border: 2px solid $brown-dark;
+                    background-color: $color-primary;
+                    border: 2px solid $color-primary;
                 }
             }
         }
@@ -45,9 +45,9 @@
             border: 2px solid $black;
             border-radius: 30px;
             &:hover {
-                background-color: $brown-dark;
+                background-color: $color-primary;
                 color: #fff;
-                border: 2px solid $brown-dark;
+                border: 2px solid $color-primary;
             }
         }
     }
