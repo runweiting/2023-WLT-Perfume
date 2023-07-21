@@ -148,7 +148,7 @@ $white: #FFFFFF;
 }
 
 /* -- 共同架構 -- */
-*,*:before,*:after {
+*,*::before,*::after {
     box-sizing: border-box;
 }
 body {

@@ -224,7 +224,7 @@ table {
 }
 
 /* -- 共同架構 -- */
-*, *:before, *:after {
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
@@ -276,8 +276,17 @@ button:hover {
   justify-content: space-between;
   align-items: center;
 }
-.header img {
+.header h1 {
+  float: left;
+}
+.header h1 a {
+  background-image: url(/images/d’Perfume.png);
+  width: 128px;
   height: 38px;
+  display: block;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .desk-nav {
