@@ -53,13 +53,40 @@ table {
   border-spacing: 0;
 }
 
-/* -- 顏色 -- */
-/* -- 背景顏色 -- */
+/* === 自定義 reset ====== */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.5;
+}
+
+button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+button:hover {
+  opacity: 0.5;
+}
+
+/* === 01 顏色 ====== */
+/* --- 01-1. 色系 --- */
+/* --- 01-2. 背景色 --- */
 .bg-light {
   background-color: #E0E0E0;
 }
 
-/* -- 文字顏色 -- */
+/* --- 01-3. 文字顏色 --- */
 .color-primary {
   color: #916019;
 }
@@ -68,7 +95,7 @@ table {
   color: #8D8D8D;
 }
 
-.color-light {
+.color-link {
   color: #AC8A46;
 }
 
@@ -80,7 +107,8 @@ table {
   color: #FFFFFF;
 }
 
-/* -- 字級 -- */
+/* === 02 字體 ====== */
+/* --- 02-1. 字級 --- */
 .fs-1 {
   font-size: 14px;
 }
@@ -105,7 +133,7 @@ table {
   font-size: 40px;
 }
 
-/* -- 字重 -- */
+/* --- 02-2. 字重 --- */
 .fw-light {
   font-weight: 300;
 }
@@ -120,12 +148,6 @@ table {
 
 .fw-bold {
   font-weight: 700;
-}
-
-.SF-14m {
-  font-family: SF Pro Text;
-  font-size: 14px;
-  font-weight: 500;
 }
 
 .SF-16l {
@@ -201,12 +223,33 @@ table {
   font-weight: 600;
 }
 
-/* -- 字體樣式 -- */
-.text-decoration-line-through {
-  text-decoration: line-through;
+/* === 03 border-box ====== */
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
-/* -- 排版 -- */
+* {
+  outline: 1px solid yellowgreen;
+}
+
+/* === 04 全站樣式 ====== */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang TC", "SF Pro Text", "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5;
+  color: #000000;
+}
+
+.wrap {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.material-icons {
+  vertical-align: middle;
+  font-size: 20px;
+}
+
+/* === 01 flex ====== */
 .d-flex {
   display: flex;
 }
@@ -227,19 +270,25 @@ table {
   margin-right: 0 auto;
 }
 
-/* -- 間距 -- */
+/* === 02 margin ====== */
+/* --- 02-1. margin-right (4的倍數) --- */
 .mr-1 {
   margin-right: 4px;
 }
 
-.mr-11 {
-  margin-right: 11px;
+.mr-2 {
+  margin-right: 8px;
+}
+
+.mr-5 {
+  margin-right: 20px;
 }
 
 .mr-8 {
   margin-right: 32px;
 }
 
+/* --- 02-2. margin-bottom (4的倍數) --- */
 .mb-1 {
   margin-bottom: 4px;
 }
@@ -264,61 +313,12 @@ table {
   margin-bottom: 60px;
 }
 
-.gap-8 {
-  gap: 8px;
+/* === 03 刪除線 ====== */
+.text-decoration-line-through {
+  text-decoration: line-through;
 }
 
-/* -- 共同架構 -- */
-* {
-  outline: 1px solid yellowgreen;
-}
-
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "PingFang TC", "SF Pro Text", "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
-  line-height: 1.5;
-  color: #000000;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-a {
-  display: block;
-  text-decoration: none;
-}
-a:hover {
-  opacity: 0.5;
-}
-
-button {
-  padding: 0;
-  border: none;
-  background-color: transparent;
-}
-button:hover {
-  opacity: 0.5;
-}
-
-.wrap {
-  max-width: 1110px;
-  margin: 0 auto;
-}
-
-.material-icons {
-  vertical-align: middle;
-  font-size: 20px;
-}
-
-/* -- header -- */
+/* --- header --- */
 .header {
   padding: 9px 0;
 }
@@ -339,12 +339,12 @@ button:hover {
   font-family: "SF Pro Text";
 }
 
-/* -- 768 mobile-nav -- */
+/* --- 768 mobile-nav --- */
 .mobile-nav {
   display: none;
 }
 
-/* -- subscribe -- */
+/* --- subscribe --- */
 .subscribe {
   height: 600px;
   background-image: url("https://images.unsplash.com/photo-1532413992378-f169ac26fff0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1160&q=80");
@@ -374,20 +374,15 @@ button:hover {
   font-size: 16px;
 }
 
-/* -- footer -- */
+/* --- footer --- */
 .footer {
   background-color: #916019;
 }
 .footer .wrap {
   padding: 21px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
-.footer .wrap .copyright {
-  display: flex;
-  align-items: center;
-  gap: 20px;
+.footer .wrap .copyright p {
+  font-family: "SF Pro Text";
 }
 .footer .wrap .copyright img {
   height: 38px;
@@ -399,7 +394,7 @@ button:hover {
   padding: 0 18px;
 }
 
-/* -- 1110 -- */
+/* --- 1110 --- */
 @media (max-width: 1109.98px) {
   .header {
     padding: 9px;
@@ -411,7 +406,7 @@ button:hover {
     padding: 21px;
   }
 }
-/* -- 768 -- */
+/* --- 768 --- */
 @media (max-width: 767.98px) {
   .header {
     padding: 9px 20px;

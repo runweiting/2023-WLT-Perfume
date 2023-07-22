@@ -1,4 +1,4 @@
-/* -- header -- */
+/* --- header --- */
 .header {
     padding: 9px 0;
     h1 {
@@ -17,12 +17,12 @@
 .desk-nav {
     font-family: 'SF Pro Text';
 }
-/* -- 768 mobile-nav -- */
+/* --- 768 mobile-nav --- */
 .mobile-nav {
     display: none;
 }
 
-/* -- subscribe -- */
+/* --- subscribe --- */
 .subscribe {
     height: 600px;
     background-image: url("https://images.unsplash.com/photo-1532413992378-f169ac26fff0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1160&q=80");
@@ -50,18 +50,15 @@
         font-size: 16px;
     }
 }
-/* -- footer -- */
+/* --- footer --- */
 .footer {
     background-color: $color-primary;
     .wrap {
         padding: 21px 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         .copyright {
-            display: flex;
-            align-items: center;
-            gap: 20px;
+            p {
+                font-family: 'SF Pro Text';
+            }
             img {
                 height: 38px;
             }
@@ -75,7 +72,7 @@
     }
 }  
 
-/* -- 1110 -- */
+/* --- 1110 --- */
 @media (max-width: 1109.98px) {
     .header {
         padding: 9px;
@@ -88,7 +85,7 @@
     }
 }
 
-/* -- 768 -- */
+/* --- 768 --- */
 @media (max-width: 767.98px) {
     .header {
         padding: 9px 20px;

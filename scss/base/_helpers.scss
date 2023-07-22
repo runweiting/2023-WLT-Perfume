@@ -1,4 +1,4 @@
-/* === 01 flex === */
+/* === 01 flex ====== */
 
 .d-flex {
     display: flex;
@@ -16,11 +16,17 @@
     margin-right: 0 auto;
 }
 
-/* === 02 margin === */
+/* === 02 margin ====== */
 
 /* --- 02-1. margin-right (4的倍數) --- */
 .mr-1 {
     margin-right: 4px;
+}
+.mr-2 {
+    margin-right: 8px;
+}
+.mr-5 {
+    margin-right: 20px;
 }
 .mr-8 {
     margin-right: 32px;
@@ -46,13 +52,8 @@
     margin-bottom: 60px;
 }
 
-/* === 03 刪除線 === */
+/* === 03 刪除線 ====== */
 
 .text-decoration-line-through {
     text-decoration: line-through;
-}
-
-
-.gap-8 {
-    gap: 8px;
 }

@@ -1,4 +1,4 @@
-/* === 01 顏色 === */
+/* === 01 顏色 ====== */
 
 /* --- 01-1. 色系 --- */
 $color-primary: #916019;
@@ -26,7 +26,7 @@ $color-link: #AC8A46;
     color: #FFFFFF;
 }
 
-/* === 02 字體 === */
+/* === 02 字體 ====== */
 
 /* --- 02-1. 字級 --- */
 .fs-1 {
@@ -62,11 +62,6 @@ $color-link: #AC8A46;
     font-weight: 700;
 }
 
-.SF-14m {
-    font-family: SF Pro Text;
-    font-size: 14px;
-    font-weight: 500;
-}
 .SF-16l {
     font-family: SF Pro Text;
     font-weight: 300;
@@ -128,24 +123,22 @@ $color-link: #AC8A46;
     font-weight: 600;
 }
 
-/* -- 全域 border-box -- */
-* {
-    outline: 1px solid yellowgreen;
-}
+/* === 03 border-box ====== */
+
 *,*::before,*::after {
     box-sizing: border-box;
 }
-/* -- 全站樣式 -- */
+* {
+    outline: 1px solid yellowgreen;
+}
 
-/* -- 共同架構 -- */
+/* === 04 全站樣式 ====== */
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, "PingFang TC", "SF Pro Text", "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
     line-height: 1.5;
     color: #000000;
 }
-
-
 .wrap {
     max-width: 1110px;
     margin: 0 auto;
