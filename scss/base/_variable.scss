@@ -1,3 +1,4 @@
+
 /* -- 顏色 -- */
 $color-primary: #916019;
 $color-secondary: #8D8D8D;
@@ -179,39 +180,23 @@ $color-light: #AC8A46;
     gap: 8px;
 }
 
-/* -- 共同架構 -- */
+/* -- 全域 border-box -- */
 * {
     outline: 1px solid yellowgreen;
 }
 *,*::before,*::after {
     box-sizing: border-box;
 }
+/* -- 全站樣式 -- */
+
+/* -- 共同架構 -- */
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, "PingFang TC", "SF Pro Text", "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
     line-height: 1.5;
     color: #000000;
 }
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-a {
-    display: block;
-    text-decoration: none;
-    &:hover {
-        opacity: 0.5;
-    }
-}
-button {
-    padding: 0;
-    border: none;
-    background-color: transparent;
-    &:hover {
-        opacity: 0.5;
-    }
-}
+
 
 .wrap {
     max-width: 1110px;
