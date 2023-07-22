@@ -162,11 +162,11 @@ input {
   box-sizing: border-box;
 }
 
-/* {
-    outline: 1px solid yellowgreen;
-}*/
-/* === 04 全站樣式 ====== */
-body {
+* {
+  outline: 1px solid yellowgreen;
+}
+
+* body {
   font-family: "SF Pro Text", "PingFang TC", "Segoe UI", sans-serif;
   line-height: 1.5;
   color: #000000;
@@ -213,6 +213,10 @@ body {
 
 .me-auto {
   margin-right: auto;
+}
+
+.m0-auto {
+  margin: 0 auto;
 }
 
 /* === 02 margin ====== */
@@ -267,7 +271,7 @@ body {
   text-decoration: line-through;
 }
 
-/* --- header --- */
+/* --- header 表頭 --- */
 .header {
   padding: 9px 0;
 }
@@ -284,12 +288,12 @@ body {
   white-space: nowrap;
 }
 
-/* --- 768 mobile-nav --- */
+/* --- 767px mobile-nav --- */
 .mobile-nav {
   display: none;
 }
 
-/* --- subscribe --- */
+/* --- subscribe 訂閱 --- */
 .subscribe {
   height: 600px;
   background-image: url("https://images.unsplash.com/photo-1532413992378-f169ac26fff0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1160&q=80");
@@ -299,6 +303,7 @@ body {
 }
 .subscribe .wrap {
   padding: 312px 0 112px;
+  height: 100%;
 }
 
 .input-email {
@@ -315,7 +320,7 @@ body {
   border-radius: 0 4px 4px 0;
 }
 
-/* --- footer --- */
+/* --- footer 表尾 --- */
 .footer {
   background-color: #916019;
 }
@@ -329,36 +334,30 @@ body {
   padding: 0 18px;
 }
 
-/* --- 1110 --- */
-@media (max-width: 1109.98px) {
+@media (max-width: 992px) {
   .header {
-    padding: 9px;
+    padding: 9px 15px;
   }
-  .subscribe-text {
-    padding: 21px;
+  .subscribe .wrap {
+    padding: 312px 15px 112px;
   }
   .footer .wrap {
-    padding: 21px;
+    padding: 21px 15px;
   }
 }
-/* --- 768 --- */
-@media (max-width: 767.98px) {
-  .header {
-    padding: 9px 20px;
-  }
+@media (max-width: 767px) {
   .desk-nav {
     display: none;
   }
   .mobile-nav {
     display: flex;
     align-items: center;
-    gap: 28px;
   }
-  .mobile-nav .shopping-cart {
-    width: 30px;
+  .mobile-nav .menu-icon {
     position: relative;
+    width: 32px;
   }
-  .mobile-nav .shopping-cart .quantity {
+  .mobile-nav .menu-icon .quantity {
     position: absolute;
     top: 0;
     right: 0;
@@ -375,6 +374,7 @@ body {
     margin: 0 auto;
   }
 }
+/* --- banner 橫幅 --- */
 .banner {
   height: 870px;
   background-image: url("https://images.unsplash.com/photo-1588159343745-445ae0b16383?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2064&q=80");
@@ -384,9 +384,10 @@ body {
 }
 .banner .wrap {
   padding: 295px 0;
+  height: 100%;
 }
 .banner .wrap .slogan {
-  width: 445px;
+  width: 40%;
 }
 .banner .wrap .slogan .btn-shopnow {
   padding: 9px 109px;
@@ -397,6 +398,7 @@ body {
   border: 2px solid #916019;
 }
 
+/* --- main 主頁 --- */
 .main {
   padding: 60px 0;
   display: grid;
@@ -433,6 +435,7 @@ body {
   transform: scale(1.2);
 }
 
+/* --- bestselling 熱門 --- */
 .bestselling {
   padding: 40px 0;
 }
@@ -476,6 +479,7 @@ body {
   z-index: 1;
 }
 
+/* --- news 消息 --- */
 .news {
   padding: 60px 0;
 }
@@ -489,17 +493,21 @@ body {
   width: 33.33%;
 }
 
-/* -- 1110 -- */
-@media (max-width: 1109.98px) {
+@media (max-width: 992px) {
   .main {
     grid-template-columns: 100%;
   }
   .textBox p {
     margin-bottom: 30px;
   }
+  .bestselling {
+    padding: 40px 15px;
+  }
+  .news {
+    padding: 60px 15px;
+  }
 }
-/* -- 768 -- */
-@media (max-width: 767.98px) {
+@media (max-width: 767px) {
   .banner {
     height: 480px;
   }

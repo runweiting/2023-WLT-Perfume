@@ -1,4 +1,4 @@
-/* --- header --- */
+/* --- header 表頭 --- */
 .header {
     padding: 9px 0;
     h1 {
@@ -14,12 +14,12 @@
         }
     }
 }
-/* --- 768 mobile-nav --- */
+/* --- 767px mobile-nav --- */
 .mobile-nav {
     display: none;
 }
 
-/* --- subscribe --- */
+/* --- subscribe 訂閱 --- */
 .subscribe {
     height: 600px;
     background-image: url("https://images.unsplash.com/photo-1532413992378-f169ac26fff0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1160&q=80");
@@ -28,6 +28,7 @@
     background-position: 0 50%;
     .wrap {
         padding: 312px 0 112px;
+        height: 100%;
     }
 }
 .input {
@@ -45,7 +46,8 @@
         border-radius: 0 4px 4px 0;
     }
 }
-/* --- footer --- */
+
+/* --- footer 表尾 --- */
 .footer {
     background-color: $color-primary;
     .wrap {
@@ -59,34 +61,28 @@
     }
 }  
 
-/* --- 1110 --- */
-@media (max-width: 1109.98px) {
+@media (max-width: 992px) {
     .header {
-        padding: 9px;
+        padding: 9px 15px;
     }
-    .subscribe-text {
-       padding: 21px;
+    .subscribe .wrap {
+        padding: 312px 15px 112px;
     }
     .footer .wrap {
-        padding: 21px;
+        padding: 21px 15px;
     }
 }
 
-/* --- 768 --- */
-@media (max-width: 767.98px) {
-    .header {
-        padding: 9px 20px;
-    }
+@media (max-width: 767px) {
     .desk-nav {
         display: none;
     }
     .mobile-nav {
         display: flex;
         align-items: center;
-        gap: 28px;
-        .shopping-cart {
-            width: 30px;
+        .menu-icon {
             position: relative;
+            width: 32px;
             .quantity {
                 position: absolute;
                 top: 0;

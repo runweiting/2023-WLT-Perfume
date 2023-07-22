@@ -1,3 +1,4 @@
+/* --- banner 橫幅 --- */
 .banner {
     height: 870px;
     background-image: url("https://images.unsplash.com/photo-1588159343745-445ae0b16383?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2064&q=80");
@@ -6,8 +7,9 @@
     background-position: center center;
     .wrap {
         padding: 295px 0;
+        height: 100%;
         .slogan {
-            width: 445px;
+            width: 40%;
             .btn-shopnow {
                 padding: 9px 109px;
                 border: 2px solid #FFFFFF;
@@ -19,6 +21,8 @@
         }
     }
 }
+
+/* --- main 主頁 --- */
 .main {
     padding: 60px 0;
     display: grid;
@@ -54,6 +58,8 @@
         }
     }        
 }
+
+/* --- bestselling 熱門 --- */
 .bestselling {
     padding: 40px 0;
     .bestselling-item {
@@ -97,6 +103,8 @@
     }
     
 }
+
+/* --- news 消息 --- */
 .news {
     padding: 60px 0; 
     .news-photo {
@@ -110,18 +118,22 @@
     }
 }
 
-/* -- 1110 -- */
-@media (max-width: 1109.98px) {
+@media (max-width: 992px) {
     .main {
         grid-template-columns: 100%;
     }
     .textBox p {
         margin-bottom: 30px;
     }
+    .bestselling {
+        padding: 40px 15px;
+    }
+    .news {
+        padding: 60px 15px;
+    }
 }
 
-/* -- 768 -- */
-@media (max-width: 767.98px) {
+@media (max-width: 767px) {
     .banner {
         height: 480px;
         .wrap {
