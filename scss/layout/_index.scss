@@ -68,9 +68,7 @@
 }
 .bestselling {
     padding: 40px 0;
-    display: flex;
-    gap: 30px;
-    .item-bestselling {
+    .bestselling-item {
         width: 33.33%;
         overflow: hidden;
         a {
@@ -195,7 +193,7 @@
         padding: 30px 15px;
         flex-direction: column;
         gap: 32px;
-        .item-bestselling {
+        .bestselling-item {
             width: 100%;
             overflow: hidden;
             img {
