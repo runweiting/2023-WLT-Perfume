@@ -62,75 +62,14 @@ $color-link: #AC8A46;
     font-weight: 700;
 }
 
-.SF-16l {
-    font-family: SF Pro Text;
-    font-weight: 300;
-}
-.SF-16m {
-    font-family: SF Pro Text;
-    font-weight: 500;
-}
-.SF-20l {
-    font-family: SF Pro Text;
-    font-size: 20px;
-    font-weight: 300;
-}
-.SF-20 {
-    font-family: SF Pro Text;
-    font-size: 20px;
-}
-.SF-20m {
-    font-family: SF Pro Text;
-    font-size: 20px;
-    font-weight: 500;
-}
-.SF-24 {
-    font-family: SF Pro Text;
-    font-size: 24px;
-}
-.SF-24sb {
-    font-family: SF Pro Text;
-    font-size: 24px;
-    font-weight: 600;
-}
-.SF-28m {
-    font-family: SF Pro Text;
-    font-size: 28px;
-    font-weight: 500;
-}
-.SF-32b {
-    font-family: SF Pro Text;
-    font-size: 32px;
-    font-weight: 700;
-}
-.SF-40b {
-    font-family: SF Pro Text;
-    font-size: 40px;
-    font-weight: 700;
-}
-.PF-16sb {
-    font-family: PingFang TC;
-    font-weight: 600;
-}
-.PF-20l {
-    font-family: PingFang TC;
-    font-size: 20px;
-    font-weight: 300;
-}
-.PF-32sb {
-    font-family: PingFang TC;
-    font-size: 32px;
-    font-weight: 600;
-}
-
 /* === 03 border-box ====== */
 
 *,*::before,*::after {
     box-sizing: border-box;
 }
-* {
+/* {
     outline: 1px solid yellowgreen;
-}
+}*/
 
 /* === 04 全站樣式 ====== */
 

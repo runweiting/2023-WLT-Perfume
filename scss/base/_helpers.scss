@@ -6,14 +6,23 @@
 .flex-row-reverse {
     flex-direction: row-reverse;
 }
+.flex-column {
+    flex-direction: column;
+}
+.justify-content-center {
+    justify-content: center;
+}
 .justify-content-between {
     justify-content: space-between;
 }
 .align-items-center {
     align-items: center;
 }
+.ms-auto {
+    margin-left: auto;
+}
 .me-auto {
-    margin-right: 0 auto;
+    margin-right: auto;
 }
 
 /* === 02 margin ====== */

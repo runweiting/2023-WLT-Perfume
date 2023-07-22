@@ -71,12 +71,19 @@ a:hover {
 }
 
 button {
+  font-family: "SF Pro Text";
+  font-size: 16px;
   padding: 0;
-  border: none;
+  border-radius: 30px;
   background-color: transparent;
 }
 button:hover {
-  opacity: 0.5;
+  opacity: 0.7;
+}
+
+input {
+  font-family: "SF Pro Text";
+  font-size: 16px;
 }
 
 /* === 01 顏色 ====== */
@@ -150,88 +157,14 @@ button:hover {
   font-weight: 700;
 }
 
-.SF-16l {
-  font-family: SF Pro Text;
-  font-weight: 300;
-}
-
-.SF-16m {
-  font-family: SF Pro Text;
-  font-weight: 500;
-}
-
-.SF-20l {
-  font-family: SF Pro Text;
-  font-size: 20px;
-  font-weight: 300;
-}
-
-.SF-20 {
-  font-family: SF Pro Text;
-  font-size: 20px;
-}
-
-.SF-20m {
-  font-family: SF Pro Text;
-  font-size: 20px;
-  font-weight: 500;
-}
-
-.SF-24 {
-  font-family: SF Pro Text;
-  font-size: 24px;
-}
-
-.SF-24sb {
-  font-family: SF Pro Text;
-  font-size: 24px;
-  font-weight: 600;
-}
-
-.SF-28m {
-  font-family: SF Pro Text;
-  font-size: 28px;
-  font-weight: 500;
-}
-
-.SF-32b {
-  font-family: SF Pro Text;
-  font-size: 32px;
-  font-weight: 700;
-}
-
-.SF-40b {
-  font-family: SF Pro Text;
-  font-size: 40px;
-  font-weight: 700;
-}
-
-.PF-16sb {
-  font-family: PingFang TC;
-  font-weight: 600;
-}
-
-.PF-20l {
-  font-family: PingFang TC;
-  font-size: 20px;
-  font-weight: 300;
-}
-
-.PF-32sb {
-  font-family: PingFang TC;
-  font-size: 32px;
-  font-weight: 600;
-}
-
 /* === 03 border-box ====== */
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
-* {
-  outline: 1px solid yellowgreen;
-}
-
+/* {
+    outline: 1px solid yellowgreen;
+}*/
 /* === 04 全站樣式 ====== */
 body {
   font-family: "SF Pro Text", "PingFang TC", "Segoe UI", sans-serif;
@@ -258,6 +191,14 @@ body {
   flex-direction: row-reverse;
 }
 
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
 .justify-content-between {
   justify-content: space-between;
 }
@@ -266,8 +207,12 @@ body {
   align-items: center;
 }
 
+.ms-auto {
+  margin-left: auto;
+}
+
 .me-auto {
-  margin-right: 0 auto;
+  margin-right: auto;
 }
 
 /* === 02 margin ====== */
@@ -353,14 +298,11 @@ body {
   background-position: 0 50%;
 }
 .subscribe .wrap {
-  height: 600px;
   padding: 312px 0 112px;
 }
 
-.input {
-  display: flex;
-}
 .input-email {
+  color: #8D8D8D;
   padding: 18px 56px 18px 18px;
   background-color: #FFFFFF;
   border: 2px solid #916019;
@@ -371,7 +313,6 @@ body {
   background-color: #916019;
   border: 2px solid #916019;
   border-radius: 0 4px 4px 0;
-  font-size: 16px;
 }
 
 /* --- footer --- */
@@ -383,9 +324,6 @@ body {
 }
 .footer .wrap .copyright img {
   height: 38px;
-}
-.footer .wrap .subnav {
-  display: flex;
 }
 .footer .wrap .subnav a {
   padding: 0 18px;
@@ -445,17 +383,14 @@ body {
   background-position: center center;
 }
 .banner .wrap {
-  height: 870px;
   padding: 295px 0;
 }
 .banner .wrap .slogan {
-  margin-left: auto;
   width: 445px;
 }
 .banner .wrap .slogan .btn-shopnow {
   padding: 9px 109px;
   border: 2px solid #FFFFFF;
-  border-radius: 30px;
 }
 .banner .wrap .slogan .btn-shopnow:hover {
   background-color: #916019;
@@ -468,41 +403,33 @@ body {
   grid-template-columns: 100%;
   grid-template-rows: 555px 555px 555px 1080px;
 }
-
-.text {
+.main .card-text {
   width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
-.text .textBox {
+.main .card-text .textBox {
   text-align: left;
   width: 64%;
 }
-.text .textBox .btn-freeTrain {
+.main .card-text .textBox .btn-freeTrain {
   padding: 15px 52px;
   border: 2px solid #000000;
-  border-radius: 30px;
 }
-.text .textBox .btn-freeTrain:hover {
+.main .card-text .textBox .btn-freeTrain:hover {
+  color: #FFFFFF;
   background-color: #916019;
-  color: #fff;
   border: 2px solid #916019;
 }
-
-.photo {
+.main .card-photo {
   width: 50%;
   overflow: hidden;
 }
-.photo .photoBox {
-  width: 100%;
+.main .card-photo .photoBox {
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   transition: all 0.5s ease-in-out;
 }
-.photo .photoBox:hover {
+.main .card-photo .photoBox:hover {
   transform: scale(1.2);
 }
 

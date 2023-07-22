@@ -5,15 +5,12 @@
     background-repeat: no-repeat;
     background-position: center center;
     .wrap {
-        height: 870px;
         padding: 295px 0;
         .slogan {
-            margin-left: auto;
             width: 445px;
             .btn-shopnow {
                 padding: 9px 109px;
                 border: 2px solid #FFFFFF;
-                border-radius: 30px;
                 &:hover {
                     background-color: $color-primary;
                     border: 2px solid $color-primary;
@@ -27,41 +24,35 @@
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 555px 555px 555px 1080px;
-}
-.text {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    .textBox {
-        text-align: left;
-        width: 64%;
-        .btn-freeTrain {
-            padding: 15px 52px;
-            border: 2px solid #000000;
-            border-radius: 30px;
-            &:hover {
-                background-color: $color-primary;
-                color: #fff;
-                border: 2px solid $color-primary;
+    .card-text {
+        width: 50%;
+        .textBox {
+            text-align: left;
+            width: 64%;
+            .btn-freeTrain {
+                padding: 15px 52px;
+                border: 2px solid #000000;
+                &:hover {
+                    color: #FFFFFF;
+                    background-color: $color-primary;
+                    border: 2px solid $color-primary;
+                }
             }
         }
     }
-}
-.photo {
-    width: 50%;
-    overflow: hidden;
-    .photoBox {
-        width: 100%;
-        height: 100%;
-        background-size: cover;
-        background-repeat: no-repeat;
-        transition: all 0.5s ease-in-out;
-        &:hover {
-            transform: scale(1.2);
+    .card-photo {
+        width: 50%;
+        overflow: hidden;
+        .photoBox {
+            height: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            transition: all 0.5s ease-in-out;
+            &:hover {
+                transform: scale(1.2);
+            }
         }
-    }
+    }        
 }
 .bestselling {
     padding: 40px 0;

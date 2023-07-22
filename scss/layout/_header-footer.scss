@@ -27,13 +27,12 @@
     background-repeat: no-repeat;
     background-position: 0 50%;
     .wrap {
-        height: 600px;
         padding: 312px 0 112px;
     }
 }
 .input {
-    display: flex;
     &-email {
+        color: $color-secondary;
         padding: 18px 56px 18px 18px;
         background-color: #FFFFFF;
         border: 2px solid $color-primary;
@@ -44,7 +43,6 @@
         background-color: $color-primary;
         border: 2px solid $color-primary;
         border-radius: 0 4px 4px 0;
-        font-size: 16px;
     }
 }
 /* --- footer --- */
@@ -55,11 +53,8 @@
         .copyright img {
             height: 38px;
         }
-        .subnav {
-            display: flex;
-            a {
-                padding: 0 18px;
-            }
+        .subnav a {
+            padding: 0 18px;
         }
     }
 }  
