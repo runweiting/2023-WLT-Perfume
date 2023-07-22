@@ -234,7 +234,7 @@ button:hover {
 
 /* === 04 全站樣式 ====== */
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "PingFang TC", "SF Pro Text", "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "SF Pro Text", "PingFang TC", "Segoe UI", sans-serif;
   line-height: 1.5;
   color: #000000;
 }
@@ -339,10 +339,6 @@ body {
   white-space: nowrap;
 }
 
-.desk-nav {
-  font-family: "SF Pro Text";
-}
-
 /* --- 768 mobile-nav --- */
 .mobile-nav {
   display: none;
@@ -384,9 +380,6 @@ body {
 }
 .footer .wrap {
   padding: 21px 0;
-}
-.footer .wrap .copyright p {
-  font-family: "SF Pro Text";
 }
 .footer .wrap .copyright img {
   height: 38px;
@@ -522,7 +515,6 @@ body {
 .bestselling .bestselling-item {
   width: 33.33%;
   overflow: hidden;
-  font-family: "SF Pro Text";
 }
 .bestselling .bestselling-item a {
   color: #000000;

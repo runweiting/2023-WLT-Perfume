@@ -14,9 +14,6 @@
         }
     }
 }
-.desk-nav {
-    font-family: 'SF Pro Text';
-}
 /* --- 768 mobile-nav --- */
 .mobile-nav {
     display: none;
@@ -55,13 +52,8 @@
     background-color: $color-primary;
     .wrap {
         padding: 21px 0;
-        .copyright {
-            p {
-                font-family: 'SF Pro Text';
-            }
-            img {
-                height: 38px;
-            }
+        .copyright img {
+            height: 38px;
         }
         .subnav {
             display: flex;
