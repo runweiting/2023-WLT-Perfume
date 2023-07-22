@@ -425,14 +425,12 @@ input {
   width: 50%;
   overflow: hidden;
 }
-.main .card-photo .photoBox {
-  height: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
+.main .card-photo a:hover {
+  transform: scale(1.2);
   transition: all 0.5s ease-in-out;
 }
-.main .card-photo .photoBox:hover {
-  transform: scale(1.2);
+.main .card-photo img {
+  width: 100%;
 }
 
 /* --- bestselling 熱門 --- */
@@ -464,6 +462,7 @@ input {
   text-align: center;
   top: 50%;
   right: 0;
+  bottom: 50%;
   left: 0;
   z-index: 3;
 }

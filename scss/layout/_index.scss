@@ -47,14 +47,12 @@
     .card-photo {
         width: 50%;
         overflow: hidden;
-        .photoBox {
-            height: 100%;
-            background-size: cover;
-            background-repeat: no-repeat;
+        a:hover {
+            transform: scale(1.2);
             transition: all 0.5s ease-in-out;
-            &:hover {
-                transform: scale(1.2);
-            }
+        }
+        img {
+            width: 100%;
         }
     }        
 }
@@ -86,6 +84,7 @@
             text-align: center;
             top: 50%;
             right: 0;
+            bottom: 50%;
             left: 0;
             z-index: 3;
         }
