@@ -1,15 +1,15 @@
 /* === 01 顏色 === */
 
-/* 01-1. 色系 */
+/* --- 01-1. 色系 --- */
 $color-primary: #916019;
 $color-secondary: #8D8D8D;
 $color-link: #AC8A46;
 
-/* 01-2. 背景色 */
+/* --- 01-2. 背景色 --- */
 .bg-light {
     background-color: #E0E0E0;
 }
-/* 01-3. 文字顏色 */
+/* --- 01-3. 文字顏色 --- */
 .color-primary {
     color: $color-primary;
 }
@@ -28,7 +28,7 @@ $color-link: #AC8A46;
 
 /* === 02 字體 === */
 
-/* 02-1. 字級 */
+/* --- 02-1. 字級 --- */
 .fs-1 {
     font-size: 14px;
 }
@@ -48,7 +48,7 @@ $color-link: #AC8A46;
     font-size: 40px;
 }
 
-/* 02-2. 字重 */
+/* --- 02-2. 字重 --- */
 .fw-light {
     font-weight: 300;
 }
@@ -126,61 +126,6 @@ $color-link: #AC8A46;
     font-family: PingFang TC;
     font-size: 32px;
     font-weight: 600;
-}
-
-/* -- 字體樣式 -- */
-.text-decoration-line-through {
-    text-decoration: line-through;
-}
-
-/* -- 排版 -- */
-.d-flex {
-    display: flex;
-}
-.flex-row-reverse {
-    flex-direction: row-reverse;
-}
-.justify-content-between {
-    justify-content: space-between;
-}
-.align-items-center {
-    align-items: center;
-}
-.me-auto {
-    margin-right: 0 auto;
-}
-/* -- 間距 -- */
-.mr-1 {
-    margin-right: 4px;
-}
-.mr-11 {
-    margin-right: 11px;
-}
-.mr-8 {
-    margin-right: 32px;
-}
-
-
-.mb-1 {
-    margin-bottom: 4px;
-}
-.mb-2 {
-    margin-bottom: 8px;
-}
-.mb-4 {
-    margin-bottom: 16px;
-}
-.mb-5 {
-    margin-bottom: 20px;
-}
-.mb-13 {
-    margin-bottom: 52px;
-}
-.mb-15 {
-    margin-bottom: 60px;
-}
-.gap-8 {
-    gap: 8px;
 }
 
 /* -- 全域 border-box -- */
