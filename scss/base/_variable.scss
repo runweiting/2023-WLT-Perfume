@@ -1,23 +1,23 @@
+/* === 01 顏色 === */
 
-/* -- 顏色 -- */
+/* 01-1. 色系 */
 $color-primary: #916019;
 $color-secondary: #8D8D8D;
-$color-light: #AC8A46;
+$color-link: #AC8A46;
 
-/* -- 背景顏色 -- */
+/* 01-2. 背景色 */
 .bg-light {
     background-color: #E0E0E0;
 }
-
-/* -- 文字顏色 -- */
+/* 01-3. 文字顏色 */
 .color-primary {
     color: $color-primary;
 }
 .color-secondary {
     color: $color-secondary;
 }
-.color-light {
-    color: $color-light;
+.color-link {
+    color: $color-link;
 }
 .black {
     color: #000000;
@@ -26,7 +26,9 @@ $color-light: #AC8A46;
     color: #FFFFFF;
 }
 
-/* -- 字級 -- */
+/* === 02 字體 === */
+
+/* 02-1. 字級 */
 .fs-1 {
     font-size: 14px;
 }
@@ -45,7 +47,8 @@ $color-light: #AC8A46;
 .fs-6 {
     font-size: 40px;
 }
-/* -- 字重 -- */
+
+/* 02-2. 字重 */
 .fw-light {
     font-weight: 300;
 }
