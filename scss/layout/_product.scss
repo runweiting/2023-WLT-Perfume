@@ -3,7 +3,7 @@
     padding: 14px 0;
 }
 .product {
-    padding: 80px 0;
+    padding: 80px 0 78px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
@@ -23,5 +23,15 @@
     li:nth-child(3) li:last-child, li:nth-child(4) li:last-child,li:nth-child(7) li:last-child,li:nth-child(8) li:last-child,li:nth-child(11) li:last-child,li:nth-child(12) li:last-child {
         display: none;
     }
-    
+}
+.pagination {
+    padding: 0 0 60px;
+    a {
+        width: 30px;
+        text-align: center;
+        &:hover {
+            color: $color-link;
+            border-bottom: 2px solid $color-link;
+        }
+    }
 }
