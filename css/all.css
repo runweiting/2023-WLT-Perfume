@@ -166,11 +166,11 @@ input {
   box-sizing: border-box;
 }
 
-* {
-  outline: 1px solid yellowgreen;
-}
-
-* body {
+/* {
+    outline: 1px solid yellowgreen;
+}*/
+/* === 04 全站樣式 ====== */
+body {
   font-family: "SF Pro Text", "PingFang TC", "Segoe UI", sans-serif;
   line-height: 1.5;
   color: #000000;
