@@ -33,14 +33,16 @@
 }
 .input {
     &-email {
+        min-width: 220px;
         color: $color-secondary;
-        padding: 18px 56px 18px 18px;
+        padding: 18px 0 18px 18px;
         background-color: #FFFFFF;
         border: 2px solid $color-primary;
         border-radius: 4px 0 0 4px;
     }
     .btn-subscribe {
-        padding: 18px 26px;
+        min-width: 130px;
+        padding: 18px 0;
         background-color: $color-primary;
         border: 2px solid $color-primary;
         border-radius: 0 4px 4px 0;
