@@ -1,13 +1,6 @@
-/* --- header 表頭 --- */
+/* --- menu 選單 --- */
 .menu {
-    display: flex;
-    gap: 28px;
-    button {
-        padding: 14px;
-    }
-    li:nth-child(1) button{
-        padding: 14px 14px 14px 0;
-    }
+    padding: 14px 0;
 }
 .product {
     padding: 80px 0;
@@ -16,7 +9,7 @@
     grid-template-rows: auto;
     column-gap: 30px;
     row-gap: 58px;
-    .item-product > .photoBox {
+    .product-item > .item-photo {
         width: 255px;
         height: 255px;
         overflow: hidden;

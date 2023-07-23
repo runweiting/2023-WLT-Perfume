@@ -13,6 +13,7 @@
             .btn-shopnow {
                 padding: 9px 109px;
                 border: 2px solid #FFFFFF;
+                border-radius: 30px;
                 &:hover {
                     background-color: $color-primary;
                     border: 2px solid $color-primary;
@@ -36,6 +37,7 @@
             .btn-freeTrain {
                 padding: 15px 52px;
                 border: 2px solid #000000;
+                border-radius: 30px;
                 &:hover {
                     color: #FFFFFF;
                     background-color: $color-primary;

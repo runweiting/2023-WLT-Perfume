@@ -74,7 +74,7 @@ button {
   font-family: "SF Pro Text";
   font-size: 16px;
   padding: 0;
-  border-radius: 30px;
+  border: none;
   background-color: transparent;
 }
 button:hover {
@@ -89,6 +89,10 @@ input {
 /* === 01 顏色 ====== */
 /* --- 01-1. 色系 --- */
 /* --- 01-2. 背景色 --- */
+.bg-primary {
+  background-color: #916019;
+}
+
 .bg-light {
   background-color: #E0E0E0;
 }
@@ -229,6 +233,10 @@ input {
   margin-right: 8px;
 }
 
+.mr-3 {
+  margin-right: 12px;
+}
+
 .mr-5 {
   margin-right: 20px;
 }
@@ -242,6 +250,10 @@ input {
 }
 
 /* --- 02-2. margin-bottom (4的倍數) --- */
+.mb-0 {
+  margin-bottom: 2px;
+}
+
 .mb-1 {
   margin-bottom: 4px;
 }
@@ -394,6 +406,7 @@ input {
 .banner .wrap .slogan .btn-shopnow {
   padding: 9px 109px;
   border: 2px solid #FFFFFF;
+  border-radius: 30px;
 }
 .banner .wrap .slogan .btn-shopnow:hover {
   background-color: #916019;
@@ -417,6 +430,7 @@ input {
 .main .card-text .textBox .btn-freeTrain {
   padding: 15px 52px;
   border: 2px solid #000000;
+  border-radius: 30px;
 }
 .main .card-text .textBox .btn-freeTrain:hover {
   color: #FFFFFF;
@@ -621,16 +635,9 @@ input {
     display: none;
   }
 }
-/* --- header 表頭 --- */
+/* --- menu 選單 --- */
 .menu {
-  display: flex;
-  gap: 28px;
-}
-.menu button {
-  padding: 14px;
-}
-.menu li:nth-child(1) button {
-  padding: 14px 14px 14px 0;
+  padding: 14px 0;
 }
 
 .product {
@@ -642,11 +649,11 @@ input {
        column-gap: 30px;
   row-gap: 58px;
 }
-.product .item-product > .photoBox {
+.product .product-item > .item-photo {
   width: 255px;
   height: 255px;
   overflow: hidden;
 }
-.product .item-product > .photoBox img {
+.product .product-item > .item-photo img {
   width: 500px;
 }

@@ -6,6 +6,9 @@ $color-secondary: #8D8D8D;
 $color-link: #AC8A46;
 
 /* --- 01-2. 背景色 --- */
+.bg-primary {
+    background-color: $color-primary;
+}
 .bg-light {
     background-color: #E0E0E0;
 }
