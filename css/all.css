@@ -649,11 +649,17 @@ input {
        column-gap: 30px;
   row-gap: 58px;
 }
-.product .product-item > .item-photo {
-  width: 255px;
-  height: 255px;
+.product .item-photo {
+  max-height: 255px;
   overflow: hidden;
 }
-.product .product-item > .item-photo img {
-  width: 500px;
+.product .item-photo a:hover {
+  transform: scale(1.2);
+  transition: all 0.5s ease-in-out;
+}
+.product li:nth-child(6) img, .product li:nth-child(8) img, .product li:nth-child(12) img {
+  height: 255px;
+}
+.product li:nth-child(3) li:last-child, .product li:nth-child(4) li:last-child, .product li:nth-child(7) li:last-child, .product li:nth-child(8) li:last-child, .product li:nth-child(11) li:last-child, .product li:nth-child(12) li:last-child {
+  display: none;
 }
