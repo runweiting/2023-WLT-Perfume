@@ -1,7 +1,9 @@
 /* --- menu 選單 --- */
 .menu {
-    padding: 14px 0;
+    padding: 11px 0;
 }
+
+/* --- product 商品 --- */
 .product {
     padding: 80px 0 78px;
     display: grid;
@@ -10,20 +12,27 @@
     column-gap: 30px;
     row-gap: 58px;
     .item-photo {
-        max-height: 255px;
+        width: 255px;
+        height: 255px;
         overflow: hidden;
+        img {
+            width: 255px;
+        }
         a:hover {
-            transform: scale(1.2);
             transition: all 0.5s ease-in-out;
         }
     }
-    li:nth-child(6) img, li:nth-child(8) img, li:nth-child(12) img {
-        height: 255px;
+    li:nth-child(6) img, 
+    li:nth-child(8) img, 
+    li:nth-child(12) img {
+        max-height: 255px;
     }
     li:nth-child(3) li:last-child, li:nth-child(4) li:last-child,li:nth-child(7) li:last-child,li:nth-child(8) li:last-child,li:nth-child(11) li:last-child,li:nth-child(12) li:last-child {
         display: none;
     }
 }
+
+/* --- pagination 分頁 --- */
 .pagination {
     padding: 0 0 60px;
     a {
@@ -34,4 +43,14 @@
             border-bottom: 2px solid $color-link;
         }
     }
+}
+
+@media (max-width: 992px) {
+    .menu {
+        padding: 14px 15px;
+    }
+    .product {
+        padding: 80px 15px 78px;
+    }
+
 }
