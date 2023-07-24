@@ -26,46 +26,49 @@
 /* --- main 主頁 --- */
 .main {
     padding: 60px 0;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 555px 555px 555px 1080px;
-    .card-text {
-        width: 50%;
-        .textBox {
-            text-align: left;
-            width: 63%;
-            .btn-freeTrain {
-                padding: 15px 52px;
-                border: 2px solid #000000;
-                border-radius: 30px;
-                &:hover {
-                    color: #FFFFFF;
-                    background-color: $color-primary;
-                    border: 2px solid $color-primary;
+    .card {
+        width: 100%;
+        .card-text {
+            width: 50%;
+            .textBox {
+                text-align: left;
+                width: 63%;
+                .btn-freeTrain {
+                    padding: 15px 52px;
+                    border: 2px solid #000000;
+                    border-radius: 30px;
+                    &:hover {
+                        color: #FFFFFF;
+                        background-color: $color-primary;
+                        border: 2px solid $color-primary;
+                    }
                 }
             }
         }
-    }
-    .card-photo {
-        width: 50%;
-        overflow: hidden;
-        a:hover {
-            transform: scale(1.2);
-            transition: all 0.5s ease-in-out;
+        .card-photo {
+            width: 50%;
+            height: 555px;
+            overflow: hidden;
+            a:hover {
+                transform: scale(1.2);
+                transition: all 0.5s ease-in-out;
+            }
         }
-    }   
+    }
     li:nth-child(1) img {
         height: 740px;
         object-position: 0 -30px;
     }
     li:nth-child(2) img {
         width: 555px;
+        object-position: 0 -30px;
     }
     li:nth-child(3) img {
         height: 555px;
         object-position: 0 50%;
     } 
-    li:nth-child(4) img {
+    li:nth-child(4) .card-photo,
+    li:nth-child(4) .card-photo img {
         height: 1080px;
     } 
 }
@@ -144,6 +147,9 @@
     }
     .main .card-text .textBox {
         width: 73%;
+        p {
+            margin-bottom: 20px;
+        }
     }
     .bestselling {
         padding: 40px 15px;
@@ -196,7 +202,6 @@
             }
             .card-photo {
                 width: 100%;
-                height: 737px;
                 order: 1;
             }
         }
@@ -213,7 +218,6 @@
         }
         li:nth-child(4) img {
             width: 737px;
-            object-position: 0 -200px;
         }
     }
     .bestselling {
@@ -224,14 +228,17 @@
             padding: 0 0 20px;
             overflow: hidden;
             img {
-                height: 350px;
+                width: 737px;
             }
             p {
                 margin-bottom: 4px;
             }
             .mask {
-                height: 350px;
+                height: 660px;
             }
+        }
+        li:nth-child(3) img {
+            height: 660px;
         }
     }
     .news {

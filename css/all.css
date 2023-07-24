@@ -386,10 +386,10 @@ body {
     text-align: center;
     z-index: 1;
   }
-  .subscribe-text {
+  .subscribe .subscribe-text {
     width: 100%;
   }
-  .subscribe-text .subnav {
+  .subnav {
     display: none;
   }
 }
@@ -421,32 +421,33 @@ body {
 /* --- main 主頁 --- */
 .main {
   padding: 60px 0;
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 555px 555px 555px 1080px;
 }
-.main .card-text {
+.main .card {
+  width: 100%;
+}
+.main .card .card-text {
   width: 50%;
 }
-.main .card-text .textBox {
+.main .card .card-text .textBox {
   text-align: left;
   width: 63%;
 }
-.main .card-text .textBox .btn-freeTrain {
+.main .card .card-text .textBox .btn-freeTrain {
   padding: 15px 52px;
   border: 2px solid #000000;
   border-radius: 30px;
 }
-.main .card-text .textBox .btn-freeTrain:hover {
+.main .card .card-text .textBox .btn-freeTrain:hover {
   color: #FFFFFF;
   background-color: #916019;
   border: 2px solid #916019;
 }
-.main .card-photo {
+.main .card .card-photo {
   width: 50%;
+  height: 555px;
   overflow: hidden;
 }
-.main .card-photo a:hover {
+.main .card .card-photo a:hover {
   transform: scale(1.2);
   transition: all 0.5s ease-in-out;
 }
@@ -457,13 +458,16 @@ body {
 }
 .main li:nth-child(2) img {
   width: 555px;
+  -o-object-position: 0 -30px;
+     object-position: 0 -30px;
 }
 .main li:nth-child(3) img {
   height: 555px;
   -o-object-position: 0 50%;
      object-position: 0 50%;
 }
-.main li:nth-child(4) img {
+.main li:nth-child(4) .card-photo,
+.main li:nth-child(4) .card-photo img {
   height: 1080px;
 }
 
@@ -543,6 +547,9 @@ body {
   .main .card-text .textBox {
     width: 73%;
   }
+  .main .card-text .textBox p {
+    margin-bottom: 20px;
+  }
   .bestselling {
     padding: 40px 15px;
   }
@@ -595,7 +602,6 @@ body {
   }
   .main .card .card-photo {
     width: 100%;
-    height: 737px;
     order: 1;
   }
   .main li:nth-child(1) img {
@@ -613,8 +619,6 @@ body {
   }
   .main li:nth-child(4) img {
     width: 737px;
-    -o-object-position: 0 -200px;
-       object-position: 0 -200px;
   }
   .bestselling {
     padding: 30px 15px;
@@ -626,13 +630,16 @@ body {
     overflow: hidden;
   }
   .bestselling .bestselling-item img {
-    height: 350px;
+    width: 737px;
   }
   .bestselling .bestselling-item p {
     margin-bottom: 4px;
   }
   .bestselling .bestselling-item .mask {
-    height: 350px;
+    height: 660px;
+  }
+  .bestselling li:nth-child(3) img {
+    height: 660px;
   }
   .news {
     padding: 40px 15px;

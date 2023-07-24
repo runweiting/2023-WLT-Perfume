@@ -98,10 +98,10 @@
             }
         }
     }
-    .subscribe-text {
+    .subscribe .subscribe-text {
         width: 100%;
-        .subnav {
-            display: none;
-        }
+    }
+    .subnav {
+        display: none;
     }
 }
