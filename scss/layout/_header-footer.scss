@@ -7,7 +7,6 @@
             background-image: url(/images/d’Perfume.png);
             width: 128px;
             height: 38px;
-            display: block;
             text-indent: 101%;
             overflow: hidden;
             white-space: nowrap;
@@ -68,7 +67,7 @@
 
 @media (max-width: 992px) {
     .header {
-        padding: 9px 15px;
+        padding: 9px 20px;
     }
     .subscribe .wrap {
         padding: 312px 15px 112px;
@@ -87,7 +86,6 @@
         align-items: center;
         .menu-icon {
             position: relative;
-            width: 32px;
             .quantity {
                 position: absolute;
                 top: 0;
@@ -95,14 +93,9 @@
                 padding: 0 5px;
                 background-color: $color-primary;
                 border-radius: 7px;
-                color: #FFFFFF;
-                font-size: 12px;
                 text-align: center;
                 z-index: 1;
             }
         }
-    }
-    .subscribe-text {
-        width: 100%;
     }
 }

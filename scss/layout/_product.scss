@@ -13,7 +13,7 @@
     row-gap: 58px;
     .item-photo {
         max-width: 255px;
-        height: 255px;
+        max-height: 255px;
         overflow: hidden;
         a:hover {
             transform: scale(1.1);
@@ -87,7 +87,6 @@
         .item-photo {
             max-width: 361px;
             height: 361px;
-            overflow: hidden;
         }
         li:nth-child(1) img, 
         li:nth-child(2) img, 
@@ -120,7 +119,6 @@
         .item-photo {
             max-width: 184px;
             height: 184px;
-            overflow: hidden;
         }
         li:nth-child(1) img, 
         li:nth-child(2) img, 
