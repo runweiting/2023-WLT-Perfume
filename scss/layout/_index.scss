@@ -61,7 +61,6 @@
     }
     li:nth-child(2) img {
         width: 555px;
-        object-position: 0 -30px;
     }
     li:nth-child(3) img {
         height: 555px;
@@ -203,21 +202,13 @@
             .card-photo {
                 width: 100%;
                 order: 1;
+                img {
+                    width: 737px;
+                }
             }
-        }
-        li:nth-child(1) img {
-            width: 737px;
-        }
-        li:nth-child(2) img {
-            width: 737px;
-            object-position: 0 -150px;
         }
         li:nth-child(3) img {
             height: 737px;
-            object-position: 0 0;
-        }
-        li:nth-child(4) img {
-            width: 737px;
         }
     }
     .bestselling {
@@ -255,6 +246,35 @@
             p {
                 margin-bottom: 8px;
             }
+        }
+    }
+}
+
+@media (max-width: 414px) {
+    .main .card .card-photo {
+        height: 384px;
+        img {
+            width: 384px;
+        }
+    }
+    .main li:nth-child(3) img {
+        height: 384px;
+    }
+    .main li:nth-child(4) .card-photo,
+    .main li:nth-child(4) .card-photo img {
+        height: 520px;
+    }
+    .bestselling {
+        .bestselling-item {
+            img {
+                height: 350px;
+            }
+            .mask {
+                height: 350px;
+            }
+        }
+        li:nth-child(3) img {
+            height: 350px;
         }
     }
 }

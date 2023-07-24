@@ -458,8 +458,6 @@ body {
 }
 .main li:nth-child(2) img {
   width: 555px;
-  -o-object-position: 0 -30px;
-     object-position: 0 -30px;
 }
 .main li:nth-child(3) img {
   height: 555px;
@@ -604,21 +602,11 @@ body {
     width: 100%;
     order: 1;
   }
-  .main li:nth-child(1) img {
+  .main .card .card-photo img {
     width: 737px;
-  }
-  .main li:nth-child(2) img {
-    width: 737px;
-    -o-object-position: 0 -150px;
-       object-position: 0 -150px;
   }
   .main li:nth-child(3) img {
     height: 737px;
-    -o-object-position: 0 0;
-       object-position: 0 0;
-  }
-  .main li:nth-child(4) img {
-    width: 737px;
   }
   .bestselling {
     padding: 30px 15px;
@@ -656,6 +644,30 @@ body {
   }
   .news .news-text p {
     margin-bottom: 8px;
+  }
+}
+@media (max-width: 414px) {
+  .main .card .card-photo {
+    height: 384px;
+  }
+  .main .card .card-photo img {
+    width: 384px;
+  }
+  .main li:nth-child(3) img {
+    height: 384px;
+  }
+  .main li:nth-child(4) .card-photo,
+  .main li:nth-child(4) .card-photo img {
+    height: 520px;
+  }
+  .bestselling .bestselling-item img {
+    height: 350px;
+  }
+  .bestselling .bestselling-item .mask {
+    height: 350px;
+  }
+  .bestselling li:nth-child(3) img {
+    height: 350px;
   }
 }
 /* --- menu 選單 --- */
