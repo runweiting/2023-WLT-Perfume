@@ -170,9 +170,10 @@ input {
   box-sizing: border-box;
 }
 
-/* {
-    outline: 1px solid yellowgreen;
-}*/
+* {
+  outline: 1px solid yellowgreen;
+}
+
 /* === 04 全站樣式 ====== */
 body {
   font-family: "SF Pro Text", "PingFang TC", "Segoe UI", sans-serif;
@@ -321,10 +322,9 @@ body {
   height: 100%;
 }
 .subscribe .subscribe-text {
-  max-width: 350px;
+  width: 350px;
 }
-
-.input-email {
+.subscribe .subscribe-text .input-email {
   width: 62.85%;
   color: #8D8D8D;
   padding: 18px 0 18px 18px;
@@ -332,7 +332,7 @@ body {
   border: 2px solid #916019;
   border-radius: 4px 0 0 4px;
 }
-.input .btn-subscribe {
+.subscribe .subscribe-text .input .btn-subscribe {
   width: 37.15%;
   padding: 18px 0;
   background-color: #916019;
@@ -386,6 +386,12 @@ body {
     text-align: center;
     z-index: 1;
   }
+  .subscribe-text {
+    width: 100%;
+  }
+  .subscribe-text .subnav {
+    display: none;
+  }
 }
 /* --- banner 橫幅 --- */
 .banner {
@@ -424,7 +430,7 @@ body {
 }
 .main .card-text .textBox {
   text-align: left;
-  width: 64%;
+  width: 63%;
 }
 .main .card-text .textBox .btn-freeTrain {
   padding: 15px 52px;
@@ -445,9 +451,9 @@ body {
   transition: all 0.5s ease-in-out;
 }
 .main li:nth-child(1) img {
-  width: 555px;
-  -o-object-position: 0 14%;
-     object-position: 0 14%;
+  height: 740px;
+  -o-object-position: 0 -30px;
+     object-position: 0 -30px;
 }
 .main li:nth-child(2) img {
   width: 555px;
@@ -520,7 +526,7 @@ body {
   width: 66.66%;
 }
 .news .news-photo img {
-  max-height: 520px;
+  height: 520px;
 }
 .news .news-text {
   width: 33.33%;
@@ -533,6 +539,9 @@ body {
   .main .card .card-text .btn-freeTrain {
     width: 100%;
     padding: 15px;
+  }
+  .main .card-text .textBox {
+    width: 73%;
   }
   .bestselling {
     padding: 40px 15px;
@@ -575,7 +584,7 @@ body {
     order: 2;
   }
   .main .card .card-text .textBox {
-    width: 95%;
+    width: 93%;
   }
   .main .card .card-text .textBox p {
     margin-bottom: 8px;
@@ -586,12 +595,26 @@ body {
   }
   .main .card .card-photo {
     width: 100%;
+    height: 737px;
     order: 1;
   }
-  .main .card li:nth-child(4) .card-photo img {
-    max-height: 680px;
-    -o-object-position: 50% 75%;
-       object-position: 50% 75%;
+  .main li:nth-child(1) img {
+    width: 737px;
+  }
+  .main li:nth-child(2) img {
+    width: 737px;
+    -o-object-position: 0 -150px;
+       object-position: 0 -150px;
+  }
+  .main li:nth-child(3) img {
+    height: 737px;
+    -o-object-position: 0 0;
+       object-position: 0 0;
+  }
+  .main li:nth-child(4) img {
+    width: 737px;
+    -o-object-position: 0 -200px;
+       object-position: 0 -200px;
   }
   .bestselling {
     padding: 30px 15px;
@@ -603,14 +626,13 @@ body {
     overflow: hidden;
   }
   .bestselling .bestselling-item img {
-    width: 100%;
-    max-height: 350px;
+    height: 350px;
   }
   .bestselling .bestselling-item p {
     margin-bottom: 4px;
   }
   .bestselling .bestselling-item .mask {
-    max-height: 350px;
+    height: 350px;
   }
   .news {
     padding: 40px 15px;
@@ -627,15 +649,6 @@ body {
   }
   .news .news-text p {
     margin-bottom: 8px;
-  }
-  .input-email {
-    width: 66.66%;
-  }
-  .input .btn-subscribe {
-    width: 33.33%;
-  }
-  .subnav {
-    display: none;
   }
 }
 /* --- menu 選單 --- */
