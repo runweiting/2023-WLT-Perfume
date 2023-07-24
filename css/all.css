@@ -170,10 +170,9 @@ input {
   box-sizing: border-box;
 }
 
-* {
-  outline: 1px solid yellowgreen;
-}
-
+/* {
+    outline: 1px solid yellowgreen;
+}*/
 /* === 04 全站樣式 ====== */
 body {
   font-family: "SF Pro Text", "PingFang TC", "Segoe UI", sans-serif;
@@ -687,7 +686,7 @@ body {
 }
 .product .item-photo {
   max-width: 255px;
-  max-height: 255px;
+  height: 255px;
   overflow: hidden;
 }
 .product .item-photo a:hover {
