@@ -507,6 +507,10 @@ body {
   left: 0;
   z-index: 1;
 }
+.bestselling li:nth-child(2) li:last-child,
+.bestselling li:nth-child(3) li:last-child {
+  display: none;
+}
 
 /* --- news 消息 --- */
 .news {
@@ -683,7 +687,12 @@ body {
 .product li:nth-child(12) img {
   height: 260px;
 }
-.product li:nth-child(3) li:last-child, .product li:nth-child(4) li:last-child, .product li:nth-child(7) li:last-child, .product li:nth-child(8) li:last-child, .product li:nth-child(11) li:last-child, .product li:nth-child(12) li:last-child {
+.product li:nth-child(3) li:last-child,
+.product li:nth-child(4) li:last-child,
+.product li:nth-child(7) li:last-child,
+.product li:nth-child(8) li:last-child,
+.product li:nth-child(11) li:last-child,
+.product li:nth-child(12) li:last-child {
   display: none;
 }
 

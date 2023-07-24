@@ -40,7 +40,12 @@
     li:nth-child(12) img {
         height: 260px;
     }
-    li:nth-child(3) li:last-child, li:nth-child(4) li:last-child,li:nth-child(7) li:last-child,li:nth-child(8) li:last-child,li:nth-child(11) li:last-child,li:nth-child(12) li:last-child {
+    li:nth-child(3) li:last-child, 
+    li:nth-child(4) li:last-child,
+    li:nth-child(7) li:last-child,
+    li:nth-child(8) li:last-child,
+    li:nth-child(11) li:last-child,
+    li:nth-child(12) li:last-child {
         display: none;
     }
 }
