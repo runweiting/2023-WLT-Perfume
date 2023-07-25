@@ -211,6 +211,10 @@ body {
   justify-content: space-between;
 }
 
+.justify-content-end {
+  justify-content: flex-end;
+}
+
 .align-items-center {
   align-items: center;
 }
@@ -282,7 +286,16 @@ body {
   margin-bottom: 60px;
 }
 
-/* === 03 刪除線 ====== */
+/* === 03 text-align ====== */
+.text-center {
+  text-align: center;
+}
+
+.text-start {
+  text-align: left;
+}
+
+/* === 04 刪除線 ====== */
 .text-decoration-line-through {
   text-decoration: line-through;
 }
@@ -401,14 +414,14 @@ body {
   background-position: center center;
 }
 .banner .wrap {
-  padding: 295px 0;
   height: 100%;
 }
 .banner .wrap .slogan {
   max-width: 445px;
 }
 .banner .wrap .slogan .btn-shopnow {
-  padding: 9px 109px;
+  max-width: 350px;
+  padding: 9px 0;
   border: 2px solid #FFFFFF;
   border-radius: 30px;
 }
@@ -427,16 +440,15 @@ body {
 .main .card .card-text {
   width: 50%;
 }
-.main .card .card-text .textBox {
-  text-align: left;
+.main .card .card-text .textBox, .main .card .card-text .btn-freeTrain {
   width: 63%;
 }
-.main .card .card-text .textBox .btn-freeTrain {
-  padding: 15px 52px;
+.main .card .card-text .btn-freeTrain {
+  padding: 15px 0;
   border: 2px solid #000000;
   border-radius: 30px;
 }
-.main .card .card-text .textBox .btn-freeTrain:hover {
+.main .card .card-text .btn-freeTrain:hover {
   color: #FFFFFF;
   background-color: #916019;
   border: 2px solid #916019;
@@ -535,11 +547,7 @@ body {
 
 @media (max-width: 992px) {
   .banner .wrap {
-    padding: 295px 15px;
-  }
-  .main .card .card-text .btn-freeTrain {
-    width: 100%;
-    padding: 15px;
+    padding: 0 15px;
   }
   .main .card-text .textBox {
     width: 73%;
@@ -558,21 +566,17 @@ body {
   .banner {
     height: 480px;
   }
-  .banner .wrap {
-    padding: 118px 15px;
-  }
-  .banner .wrap .slogan {
+  .banner .slogan {
     margin: 0 auto;
   }
-  .banner .wrap .slogan h2 {
+  .banner .slogan h2 {
     font-size: 32px;
   }
-  .banner .wrap .slogan p {
+  .banner .slogan p {
     font-size: 20px;
   }
-  .banner .wrap .slogan .btn-shopnow {
+  .banner .slogan .btn-shopnow {
     width: 100%;
-    padding: 9px;
   }
   .main {
     padding: 40px 15px;
@@ -593,9 +597,8 @@ body {
   .main .card .card-text .textBox p {
     margin-bottom: 8px;
   }
-  .main .card .card-text .textBox .btn-freeTrain {
+  .main .card .card-text .btn-freeTrain {
     width: 100%;
-    padding: 15px;
   }
   .main .card .card-photo {
     width: 100%;

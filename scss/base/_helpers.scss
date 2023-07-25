@@ -15,6 +15,9 @@
 .justify-content-between {
     justify-content: space-between;
 }
+.justify-content-end {
+    justify-content: flex-end;
+}
 .align-items-center {
     align-items: center;
 }
@@ -73,7 +76,17 @@
     margin-bottom: 60px;
 }
 
-/* === 03 刪除線 ====== */
+/* === 03 text-align ====== */
+
+.text-center {
+    text-align: center;
+}
+.text-start {
+    text-align: left;
+}
+
+
+/* === 04 刪除線 ====== */
 
 .text-decoration-line-through {
     text-decoration: line-through;

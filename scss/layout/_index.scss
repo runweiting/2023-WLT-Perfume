@@ -6,12 +6,12 @@
     background-repeat: no-repeat;
     background-position: center center;
     .wrap {
-        padding: 295px 0;
         height: 100%;
         .slogan {
             max-width: 445px;
             .btn-shopnow {
-                padding: 9px 109px;
+                max-width: 350px;
+                padding: 9px 0;
                 border: 2px solid #FFFFFF;
                 border-radius: 30px;
                 &:hover {
@@ -30,18 +30,17 @@
         width: 100%;
         .card-text {
             width: 50%;
-            .textBox {
-                text-align: left;
+            .textBox, .btn-freeTrain {
                 width: 63%;
-                .btn-freeTrain {
-                    padding: 15px 52px;
-                    border: 2px solid #000000;
-                    border-radius: 30px;
-                    &:hover {
-                        color: #FFFFFF;
-                        background-color: $color-primary;
-                        border: 2px solid $color-primary;
-                    }
+            }
+            .btn-freeTrain {
+                padding: 15px 0;
+                border: 2px solid #000000;
+                border-radius: 30px;
+                &:hover {
+                    color: #FFFFFF;
+                    background-color: $color-primary;
+                    border: 2px solid $color-primary;
                 }
             }
         }
@@ -138,11 +137,7 @@
 
 @media (max-width: 992px) {
     .banner .wrap {
-        padding: 295px 15px;
-    }
-    .main .card .card-text .btn-freeTrain {
-        width: 100%;
-        padding: 15px;
+        padding: 0 15px;
     }
     .main .card-text .textBox {
         width: 73%;
@@ -161,20 +156,16 @@
 @media (max-width: 767px) {
     .banner {
         height: 480px;
-        .wrap {
-            padding: 118px 15px;
-            .slogan {
-                margin: 0 auto;
-                h2 {
-                    font-size: 32px;
-                }
-                p {
-                    font-size: 20px;
-                }
-                .btn-shopnow {
-                    width: 100%;
-                    padding: 9px;
-                }
+        .slogan {
+            margin: 0 auto;
+            h2 {
+                font-size: 32px;
+            }
+            p {
+                font-size: 20px;
+            }
+            .btn-shopnow {
+                width: 100%;
             }
         }
     }
@@ -193,10 +184,9 @@
                     p {
                         margin-bottom: 8px;
                     }
-                    .btn-freeTrain {
-                        width: 100%;
-                        padding: 15px;
-                    }
+                }
+                .btn-freeTrain {
+                    width: 100%;
                 }
             }
             .card-photo {
