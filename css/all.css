@@ -171,9 +171,10 @@ input {
   box-sizing: border-box;
 }
 
-/* {
-    outline: 1px solid yellowgreen;
-}*/
+* {
+  outline: 1px solid yellowgreen;
+}
+
 /* === 04 全站樣式 ====== */
 body {
   font-family: "SF Pro Text", "PingFang TC", "Segoe UI", sans-serif;
@@ -218,6 +219,10 @@ body {
 
 .align-items-center {
   align-items: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .ms-auto {
@@ -468,9 +473,6 @@ body {
   -o-object-position: 0 -30px;
      object-position: 0 -30px;
 }
-.main li:nth-child(2) img {
-  width: 555px;
-}
 .main li:nth-child(3) img {
   height: 555px;
   -o-object-position: 0 50%;
@@ -681,12 +683,7 @@ body {
 /* --- product 商品 --- */
 .product {
   padding: 80px 0 78px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
-  row-gap: 58px;
+  gap: 58px 30px;
 }
 .product .item-photo {
   max-width: 255px;
@@ -758,10 +755,7 @@ body {
   }
   .product {
     padding: 42px 15px 46px;
-    grid-template-columns: 1fr 1fr;
-    -moz-column-gap: 15px;
-         column-gap: 15px;
-    row-gap: 30px;
+    gap: 30px 15px;
   }
   .product .item-photo {
     max-width: 361px;

@@ -6,11 +6,7 @@
 /* --- product 商品 --- */
 .product {
     padding: 80px 0 78px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-    column-gap: 30px;
-    row-gap: 58px;
+    gap: 58px 30px;
     .item-photo {
         max-width: 255px;
         height: 255px;
@@ -81,9 +77,7 @@
     }
     .product {
         padding: 42px 15px 46px;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 15px;
-        row-gap: 30px;
+        gap: 30px 15px;
         .item-photo {
             max-width: 361px;
             height: 361px;
